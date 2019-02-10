@@ -8,18 +8,31 @@
             #canvas {
                 border: 1px black solid;
             }
+            #color{
+                margin: 10px;
+            }
+            #range{
+                margin: 10px;
+            }
+            #update{
+                margin: 10px;
+            }
         </style>
 
     </head>
 
     <body>
-        <P>Click the mouse on the canvas</P>
+        <P>Click the mouse on the canvas to draw circles</P>
         <canvas id="canvas" height="400" width="400"></canvas>
-        <input id="color" type="color">
-        <input id="range" type="range">
 
+        <br><input id="color" type="color">
+        <label for="color">Change the color of the circles.</label>
+
+        <br><input id="range" type="range">
+        <label for="range">Change the size of the circles</label>
+
+        <br><button id="update" onclick="updateColorRange()">Update</button>
         <label for="update">Update the circles color and size.</label>
-        <button id="update" onclick="updateColorRange()">Update</button>
 
         <script>
             var canvas = document.getElementById("canvas");
