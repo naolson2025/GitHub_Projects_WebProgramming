@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mouse Events</title>
+
+        <style>
+            #canvas {
+                /* border: 1px black solid; */
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <P>Click the mouse on the canvas</P>
+        <canvas id="canvas" height="400" width="400"></canvas>
+        <input id="color" type="color">
+        <input id="range" type="range">
+
+        <script>
+            //variable for range
+            let range = document.getElementById('range');
+            //variable for color
+            let color = document.getElementById('color');
+
+            var canvas = document.getElementById("canvas");
+            var context = canvas.getContext("2d");
+
+            //starts the circle
+            context.beginPath();
+            //arc defines the circle
+            //x, y, radius, start angle, end angle
+            context.arc(150, 100, range, 0, 2 * Math.PI);
+            //stroke draws the arc (circle)
+            context.stroke();
+
+            var mousedown = false;
+            canvas.addEventListener("mousedown", function() {
+                mousedown = true
+            });
+            canvas.addEventListener("mouseup", function() {
+                mousedown = false
+            });
+            canvas.addEventListener("mousemove", function() {
+                if (!mousedown) { return; }
+                // event is a built-in variable, contains the event that triggered this function
+                // get the x, y location of the event
+                var x = event.offsetX;
+                var y = event.offsetY;   //offsetX, offsetY, may not work in older browsers
+                //Draw a filled rectangle centered under the mouse click
+                //x, y is the top left corner, so shift up and left by 5 to center it under the mouse.
+                context.fillStyle = color;
+                context.fillRect(x-5, y-5, 10, 10);
+            })
+        </script>
+
+    </body>
+</html>
