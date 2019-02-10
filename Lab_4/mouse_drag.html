@@ -6,7 +6,7 @@
 
         <style>
             #canvas {
-                /* border: 1px black solid; */
+                border: 1px black solid;
             }
         </style>
 
@@ -18,22 +18,23 @@
         <input id="color" type="color">
         <input id="range" type="range">
 
-        <script>
-            //variable for range
-            let range = document.getElementById('range');
-            //variable for color
-            let color = document.getElementById('color');
+        <label for="update">Update the circles color and size.</label>
+        <button id="update" onclick="updateColorRange()">Update</button>
 
+        <script>
             var canvas = document.getElementById("canvas");
             var context = canvas.getContext("2d");
 
-            //starts the circle
-            context.beginPath();
-            //arc defines the circle
-            //x, y, radius, start angle, end angle
-            context.arc(150, 100, range, 0, 2 * Math.PI);
-            //stroke draws the arc (circle)
-            context.stroke();
+            //set the variable range and color
+            let range = document.getElementById('range').value;
+            let color = document.getElementById('color').value;
+
+            function updateColorRange(){
+                //update the variables range and color upon update button click
+                range = document.getElementById('range').value;
+                color = document.getElementById('color').value;
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            }
 
             var mousedown = false;
             canvas.addEventListener("mousedown", function() {
@@ -50,8 +51,14 @@
                 var y = event.offsetY;   //offsetX, offsetY, may not work in older browsers
                 //Draw a filled rectangle centered under the mouse click
                 //x, y is the top left corner, so shift up and left by 5 to center it under the mouse.
-                context.fillStyle = color;
-                context.fillRect(x-5, y-5, 10, 10);
+
+                //sets the color to what the color selector is
+                context.strokeStyle = color;
+
+                //creates a circle upon click
+                context.beginPath();
+                context.arc(x-5, y-5, range, 0, 2 * Math.PI);
+                context.stroke();
             })
         </script>
 
