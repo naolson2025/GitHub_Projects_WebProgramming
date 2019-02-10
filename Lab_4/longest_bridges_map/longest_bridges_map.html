@@ -16,11 +16,15 @@
         <link rel="stylesheet" type="text/css" href="longest_bridges_styles.css">
         <!-- Our script, uses Leaflet to draw the maps and map components for this page  -->
         <script async defer src="longest_bridges_script.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+        <script async defer src="bridge_chart.js"></script>
     </head>
 
     <body>
         <h1>The 5 longest bridges in the USA.</h1>
         <div id="bridges-map"></div>
         <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <canvas id="bridge-chart"></canvas>
     </body>
 </html>
