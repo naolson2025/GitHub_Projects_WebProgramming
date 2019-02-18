@@ -32,7 +32,9 @@ for (let currency in rates){
 
 rates_array.sort();
 
-console.log(rates_array);
+let highest_exchange_rate = rates_array[rates_array.length - 1];
+
+console.log(highest_exchange_rate);
 
 /* b. Use this JavaScript object. This represents the current position of the International Space Station
 at 1pm on January 12th, fetched from http://api.open-notify.org/iss-now.json.
