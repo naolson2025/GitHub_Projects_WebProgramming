@@ -236,6 +236,18 @@ nobel_prize_winners_2017.prizes.forEach(function (prize) {
 });
 
 // TODO print the ids of each of the Physics Nobel laureates. Your code should still work without modification if a laureate was added, or removed.
+
+nobel_prize_winners_2017.prizes.forEach(function (prize) {
+   if (prize.category === 'physics'){
+       prize.laureates.forEach(function (person) {
+           console.log(person.id)
+       })
+   }
+});
+
 // TODO write code to print the names of all of the prize categories (So your output would start physics, chemistry, medicine... ).
+
+
+
 // TODO write code to print the total number of prize categories
 // TODO write code to count the total number of laureates from 2017. (have a good look at how the JSON is structured, and think about what loop(s) you'll need to write.)
