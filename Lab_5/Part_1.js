@@ -247,7 +247,26 @@ nobel_prize_winners_2017.prizes.forEach(function (prize) {
 
 // TODO write code to print the names of all of the prize categories (So your output would start physics, chemistry, medicine... ).
 
-
+nobel_prize_winners_2017.prizes.forEach(function (prize) {
+    console.log(prize.category)
+});
 
 // TODO write code to print the total number of prize categories
+let category_count = 0;
+
+nobel_prize_winners_2017.prizes.forEach(function (prize) {
+    category_count++
+});
+
+console.log(category_count);
+
 // TODO write code to count the total number of laureates from 2017. (have a good look at how the JSON is structured, and think about what loop(s) you'll need to write.)
+let laureate_count = 0;
+
+nobel_prize_winners_2017.prizes.forEach(function (prize) {
+    prize.laureates.forEach(function (people) {
+        laureate_count++
+    })
+});
+
+console.log(laureate_count);
