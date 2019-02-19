@@ -78,9 +78,19 @@ cats_and_owners.forEach(function (cat_and_owner) {
 });
 
 // TODO Taylor Swift's cat is called  'Meredith'. Add this data to the array.
+
+let t_swift = {name: 'Taylor Swift', cat: 'Meredith'};
+
+cats_and_owners.push(t_swift);
+
+console.log(cats_and_owners);
+
 // TODO write a loop to print each cat owner, and their cat's name, one per line. Use the forEach style.
 
-
+cats_and_owners.forEach(function (cat_and_owner) {
+   console.log(cat_and_owner.name);
+   console.log(cat_and_owner.cat);
+});
 
 /* d. Use the following JSON object, describing the Nobel Prize winners in 2017.
 Source http://api.nobelprize.org/v1/prize.json?year=2017
