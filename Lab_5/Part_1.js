@@ -51,9 +51,12 @@ var iss_location = {
 };
 
 // TODO Extract the latitude value, and log it to the console.
+
+console.log(iss_location.iss_position.latitude);
+
 // TODO Extract the longitude value, and log it to the console.
 
-
+console.log(iss_location.iss_position.longitude);
 
 
 /* c. Use this JavaScript array of objects of cat owners, and their cats. Source, moderncat.com
@@ -67,6 +70,13 @@ var cats_and_owners = [
 ];
 
 // TODO print Gary Oldman's cat's name
+
+cats_and_owners.forEach(function (cat_and_owner) {
+    if (cat_and_owner['name'] === 'Gary Oldman'){
+        console.log(cat_and_owner['cat'])
+    }
+});
+
 // TODO Taylor Swift's cat is called  'Meredith'. Add this data to the array.
 // TODO write a loop to print each cat owner, and their cat's name, one per line. Use the forEach style.
 
