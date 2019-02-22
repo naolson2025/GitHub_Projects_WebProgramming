@@ -26,7 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ISS_location.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ISS_location.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -39,21 +39,11 @@
       <file leaf-file-name="fetch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="544">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <marker date="1550801213271" expanded="true" signature="447:453" ph="©" />
+                <marker date="1550802069523" expanded="true" signature="447:453" ph="©" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sunrise_Sunset.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lab_5/Sunrise_Sunset.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,8 +80,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Lab_5/Cat_Fact_API.html" />
         <option value="$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html" />
-        <option value="$PROJECT_DIR$/Lab_5/ISS_location/fetch.js" />
         <option value="$PROJECT_DIR$/Lab_5/Sunrise_Sunset.html" />
+        <option value="$PROJECT_DIR$/Lab_5/ISS_location/fetch.js" />
       </list>
     </option>
   </component>
@@ -288,7 +278,7 @@
       <workItem from="1549812322362" duration="19262000" />
       <workItem from="1549929995658" duration="1695000" />
       <workItem from="1550513531785" duration="5150000" />
-      <workItem from="1550791026451" duration="8917000" />
+      <workItem from="1550791026451" duration="9531000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -441,7 +431,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37579000" />
+    <option name="totallyTimeSpent" value="38193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,14 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -595,20 +577,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/fetch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-          <folding>
-            <marker date="1550801213271" expanded="true" signature="447:453" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab_5/Sunrise_Sunset.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/fetch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1550802069523" expanded="true" signature="447:453" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

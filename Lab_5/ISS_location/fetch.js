@@ -25,7 +25,7 @@ let max_failed_attempts = 3;
 iss(max_failed_attempts);   // initial call to function. Once the fetch request has been made, the iss function
 // will call itself again, after a delay of update miliseconds, if the max number of failed attempts is not exceeded.
 
-function iss() {
+function iss(attempts) {
     if ( attempts <= 0 ) {
         console.log('Too many errors, abandoning requests to get ISS position.')
         return;    // Since setTimeout is not called again, no more attempts to fetch will be made
