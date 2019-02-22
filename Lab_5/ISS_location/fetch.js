@@ -2,7 +2,7 @@ let url = 'https://api.wheretheiss.at/v1/satellites/25544';
 
 let issLat = document.querySelector('#iss-lat');
 let issLong = document.querySelector('#iss-long');
-var time = document.querySelector('#time')
+let time = document.querySelector('#time');
 
 let issMarker;  // Leaflet marker
 let update = 10000;  // 10 seconds
@@ -16,7 +16,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(map);
 
 let icon = L.icon({
-    // iconUrl: 'iss.png',
+    iconUrl: 'iss.png',
     iconSize: [50, 50],
     iconAnchor: [25, 25]
 });

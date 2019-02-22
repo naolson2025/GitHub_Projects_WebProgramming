@@ -9,18 +9,34 @@
     <p id="sunset"></p>
 
     <script>
-        let url = 'https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400';
-        fetch(url).then( (res) => {
-            return res.json()
-        }).then((json) =>{
-            console.log(json)
-            let sunriseEL = document.querySelector('#sunrise')
-            let sunsetEL = document.querySelector('#sunset')
-            let sunriseTime = json.results.sunrise
-            let sunsetTime = json.results.sunset
-            sunriseEL.innerHTML = sunriseTime
-            sunsetEL.innerHTML = sunsetTime
-        })
+
+        if (navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(function (position) {
+                console.log(position);
+                getSunTimes(position)
+            })
+        }
+        else{
+            console.log('no location available')
+        }
+
+        function getSunTimes(position) {
+            let lat = position.coords.latitude;
+            let lng = position.coords.longitude;
+
+            let url = 'https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400';
+            fetch(url).then( (res) => {
+                return res.json()
+            }).then((json) =>{
+                console.log(json);
+                let sunriseEL = document.querySelector('#sunrise');
+                let sunsetEL = document.querySelector('#sunset');
+                let sunriseTime = json.results.sunrise;
+                let sunsetTime = json.results.sunset;
+                sunriseEL.innerHTML = sunriseTime;
+                sunsetEL.innerHTML = sunsetTime
+            })
+        }
     </script>
 </body>
 </html>
