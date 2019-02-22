@@ -2,6 +2,17 @@
 <html>
     <head>
         <title>Where's the ISS?</title>
+
+        <!-- Leaflet script and CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+              integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+              crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+                integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+                crossorigin=""></script>
+
+        <link rel="stylesheet" type="text/css" href="ISS_Style.css">
+
         <!-- async = load the script in parallel with the HTML
             defer = wait until the HTML was finished loading before running the script -->
         <script async defer src="fetch.js"></script>
@@ -11,9 +22,12 @@
         <h1>Where is the International Space Station?</h1>
 
         <div>
+            <p>At <span id="time"></span> the ISS is over the following coordinates:</p>
             <p>ISS Latitude: <span id="iss-lat"></span></p>
             <p>ISS Longitude: <span id="iss-long"></span></p>
         </div>
+
+        <div id="iss-map"></div>
 
     </body>
 

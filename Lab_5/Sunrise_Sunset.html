@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="sunrise"></p>
+    <p id="sunset"></p>
+
+    <script>
+        let url = 'https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400';
+        fetch(url).then( (res) => {
+            return res.json()
+        }).then((json) =>{
+            console.log(json)
+            let sunriseEL = document.querySelector('#sunrise')
+            let sunsetEL = document.querySelector('#sunset')
+            let sunriseTime = json.results.sunrise
+            let sunsetTime = json.results.sunset
+            sunriseEL.innerHTML = sunriseTime
+            sunsetEL.innerHTML = sunsetTime
+        })
+    </script>
+</body>
+</html>
