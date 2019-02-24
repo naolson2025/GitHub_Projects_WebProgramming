@@ -16,7 +16,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(map);
 
 let icon = L.icon({
-    iconUrl: 'iss.png',
+    iconUrl: 'Satellite.png',
     iconSize: [50, 50],
     iconAnchor: [25, 25]
 });
