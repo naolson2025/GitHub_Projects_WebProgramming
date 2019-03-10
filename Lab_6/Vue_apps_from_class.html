@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+        td, th {
+            width: 25%;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <h1>Hello Vue</h1>
+    <!-- -->
+    <!--Takes the message from the Vue data and puts that information below-->
+    <p>{{message | uppercase}}</p>
+
+    <p>This message is {{message.length}} letters long</p>
+
+    <button v-on:click="addExclamation">Add some stuff</button>
+
+    <p>
+        My favorite animal is {{favoriteAnimal}}
+    </p>
+    <p>
+        I'm in a fun class {{thisClass}}
+    </p>
+
+    <label for="name">Please enter your name: </label>
+    <input v-model="name" id="name">
+    <p v-if="name">Your name is {{ name }}</p>
+    <p v-else>You have not entered your name.</p>
+</div>
+
+<div id="table">
+    <h1>Example Shopping Cart</h1>
+
+    <table>
+        <tr><th>Item</th><th>Unit Price</th><th>Quantity</th><th>Total</th></tr>
+        <tr>
+            <td>{{ nameTable }}</td>
+            <td>${{ unitPrice }}</td>
+            <td><input type="number" id="quantity" v-model="quantity"></td>
+            <td id="total"> ${{ total | decimalPlaces(2) }} </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Clock',
+            favoriteAnimal: 'panda',
+            thisClass: 'Web Programming',
+            name: ""
+        },
+        methods: {
+            addExclamation: function(event) {
+                this.message += '!'
+            }
+        },
+        filters: {
+            uppercase: function(string) {
+                return string.toUpperCase()
+            }
+        }
+    })
+</script>
+
+<script>
+    let table = new Vue({
+        el: '#table',
+        data: {
+            nameTable: 'Hat',
+            quantity: 1,
+            unitPrice: 4.99
+        },
+        computed: {
+            total: function() {
+                return this.quantity * this.unitPrice
+            }
+        },
+        filters: {
+            decimalPlaces: function(price, decimalPlaces) {
+                return price.toFixed(decimalPlaces)
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
