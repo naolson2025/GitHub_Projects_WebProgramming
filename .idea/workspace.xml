@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_6/Vue_app_reading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_6/product-fullsize.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab_6/Vue_app_reading.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lab_6/Vue_app_reading.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="-929">
               <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="72" />
             </state>
           </provider>
@@ -39,15 +37,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="1258">
+              <caret line="74" column="71" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -87,11 +89,16 @@
         <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.js" />
         <option value="$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html" />
-        <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" />
         <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.html" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2605" />
@@ -117,6 +124,10 @@
               <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
               <item name="Lab_6" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -131,13 +142,13 @@
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.1" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/vuejs-191.6014.8/vuejs/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -198,7 +209,7 @@
       <workItem from="1551294396218" duration="24000" />
       <workItem from="1551765108441" duration="3735000" />
       <workItem from="1552248056028" duration="1987000" />
-      <workItem from="1552335233757" duration="2344000" />
+      <workItem from="1552335233757" duration="7468000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -389,11 +400,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552259984046</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Working Vue app Ch 2 pg 24">
+      <created>1552338863272</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1552338863272</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49968000" />
+    <option name="totallyTimeSpent" value="55092000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Set up HTML GitHub test" />
     <MESSAGE value="Added test header and paragraph" />
     <MESSAGE value="Git is working message" />
     <MESSAGE value="Added to do list items" />
@@ -496,7 +513,8 @@
     <MESSAGE value="Added capital city game to index.html" />
     <MESSAGE value="Set up Lab 6 added vue apps from class" />
     <MESSAGE value="Finished part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished part 1" />
+    <MESSAGE value="Working Vue app Ch 2 pg 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Vue app Ch 2 pg 24" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
@@ -595,16 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -612,10 +620,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-929">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="1258">
+          <caret line="74" column="71" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
         <title>Vue.js Pet Depot</title>
@@ -14,18 +14,118 @@
               integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
 
+    <!--Website body-->
     <body>
+    <!--Establish the div for the Vue instance-->
         <div id="app">
             <header>
+                <!--call the site name from the webstore Vue instance-->
+                <!--Use CSS to center the h1, add padding, and color-->
                 <h1 v-text="sitename"></h1>
             </header>
+
+            <!--Create main segment-->
+            <main>
+                <div class="row">
+                    <!--Add bootstrap columns to adjust website for browser size change-->
+                    <div class="col-md-2 col-md-offset-1">
+                        <figure>
+                            <!--Call image from Vue instance product-->
+                            <img v-bind:src="product.image">
+                        </figure>
+                    </div>
+                    <!--Add bootstrap columns to adjust website for browser size change-->
+                    <div class="col-md-6 col-md-offset-2 description">
+                        <!--Call title from vue instance-->
+                        <h1 v-text="product.title"></h1>
+                        <!--Call description from vue instance-->
+                        <p v-html="product.description"></p>
+                        <!--call price from vue instance, and call the formatPrice function to make is $ format-->
+                        <p class="price">
+                            {{product.price | formatPrice}}
+                        </p>
+                    </div>
+                </div>
+            </main>
         </div>
 
         <script type="text/javascript">
+            let APP_LOG_LIFECYCLE_EVENTS = true;
+
+            // Webstore vue instance
             let webstore = new Vue({
+                // Specify what HTML element to target
                 el: '#app',
+                // Set data
                 data: {
-                    sitename: 'Vue.js Pet Depot'
+                    sitename: "Vue.js Pet Depot",
+                    product: {
+                        id: 1001,
+                        title: "Cat Food, 25lb bag",
+                        description: "A 25 pound bag of <em>irresistible</em>," + " organic goodness for your cat.",
+                        price: 2000,
+                        image: "product-fullsize.png",
+                    },
+                },
+                // Use filters to format 2000 as $20.00
+                filters: {
+                    formatPrice(price) {
+                        // If it is not an integer return nothing
+                        if (!parseInt(price)) { return ""; }
+                        // If $1,000 or more add a comma every 3 spaces
+                        if (price > 99999) {
+                            let priceString = (price / 100).toFixed(2);
+                            let priceArray = priceString.split("").reverse();
+                            let index = 3;
+                            while (priceArray.length > index + 3) {
+                                priceArray.splice(index + 3, 0, ",");
+                                index += 4;
+                            }
+                            return "$" + priceArray.reverse().join("");
+                            // Less than $1,000 return a formatted number no comma
+                        } else {
+                            return "$" + (price / 100).toFixed(2);
+                        }
+                    }
+                },
+                //Create log instances to track the cycle of the app
+                beforeCreate: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("beforeCreate");
+                    }
+                },
+                created: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("created");
+                    }
+                },
+                beforeMount: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("beforeMount");
+                    }
+                },
+                mounted: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("mounted");
+                    }
+                },
+                beforeUpdate: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("beforeUpdate");
+                    }
+                },
+                updated: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("updated");
+                    }
+                },
+                beforeDestroy: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){}
+                    console.log("beforeDestroy");
+                },
+                destroyed: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){}
+                    console.log("destroyed");
                 }
             });
         </script>
