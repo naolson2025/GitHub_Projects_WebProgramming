@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue.js Pet Depot</title>
+        <!--Vue Library-->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!--Personal CSS-->
+        <link rel="stylesheet" type="text/css" href="Vue_app_reading.css"/>
+
+        <!-- Bootstrap Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div id="app">
+            <header>
+                <h1 v-text="sitename"></h1>
+            </header>
+        </div>
+
+        <script type="text/javascript">
+            let webstore = new Vue({
+                el: '#app',
+                data: {
+                    sitename: 'Vue.js Pet Depot'
+                }
+            });
+        </script>
+    </body>
+</html>
