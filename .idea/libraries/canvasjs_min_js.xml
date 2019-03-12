@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="canvasjs.min.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/.idea/canvasjs.react.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/.idea/canvasjs.min.js" />
+      <root url="file://$PROJECT_DIR$/.idea/canvasjs.react.js" />
+      <root url="file://$PROJECT_DIR$/.idea/jquery.canvasjs.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

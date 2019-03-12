@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- D3 link -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+        <!--Canvas library-->
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    <title>Expenses Analysis</title>
-</head>
-<body>
+        <!--Used to parse Excel spreadsheet-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.10.8/xlsx.full.min.js"></script>
 
-</body>
+        <!--js sheet for chart-->
+        <script async defer src="Project_1.js"></script>
+
+        <!--js for Excel Parse-->
+        <script async defer src="Excel_parse.js"></script>
+
+        <title>Monthly Accounting</title>
+    </head>
+
+    <body>
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <button class="btn invisible" id="backButton">< Back</button>
+
+        <form enctype="multipart/form-data">
+            <input id="upload" type=file  name="files[]">
+        </form>
+
+        <textarea class="form-control" rows=35 cols=120 id="xlx_json"></textarea>
+    </body>
+
 </html>
