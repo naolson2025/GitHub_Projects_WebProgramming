@@ -1,0 +1,78 @@
+p{
+    color: darkblue;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+}
+
+li{
+    font-size: 25px;
+}
+
+a{
+    background-color: aqua;
+    /* Gets rid of the underline for hyperlines */
+    text-decoration: none;
+}
+
+#most-favorite-food{
+    color: azure;
+}
+
+#favorite_band{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#favorite-movie-title{
+    color: darkred;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#Food_list{
+    background-color: slateblue;
+}
+
+.favorite-section{
+    border: dotted brown;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Rounded corners came from W3school */
+.favorite-image{
+    border-radius: 25px;
+    background: gray;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.section-header{
+    text-align: center;
+    color: maroon;
+}
+
+th{
+    color: red;
+}
+
+td{
+    color: brown;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
