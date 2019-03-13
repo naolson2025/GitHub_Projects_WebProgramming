@@ -1,0 +1,13 @@
+.jumbotron{
+    text-align: center;
+    background-color: aquamarine;
+    font-family: "Times New Roman", sans-serif;
+}
+
+.container-fluid{
+    margin: 10px;
+}
+
+.code{
+    background-color: blanchedalmond;
+}

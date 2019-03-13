@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Favorite Program</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link rel="stylesheet" href="Favorite-Program-Styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Contact Creator and Editor</h1>
+    </div>
+
+    <div class="container-fluid">
+        My program allows a user to create a csv file with python that contains contacts.
+    </div>
+
+    <div class="container-fluid">
+        <div class="code">
+            <pre><code>import csv
+            def main():
+                try:
+                    create()
+                    input_contact()
+                    output_table()
+                except:
+                    print("You must enter valid text.")
+
+
+            def create():
+                create_file = open('contacts.csv', 'w', newline='')            # Open the file contacts.csv in write mode
+                title_writer = csv.writer(create_file)                         # assign that file to a variable
+                title_writer.writerow(['Name', 'address', 'Email', 'Phone'])              # write the headers
+                create_file.close()
+
+
+            def input_contact():
+                append_file = open('contacts.csv', 'a', newline='')            # open the file to append
+                contact_writer = csv.writer(append_file)
+                count = 1
+                for contact in range(6):                                       # loop to let the user add contacts
+                    print("Enter contact number %d's information" % count)
+                    contact_list = [input("Name: "), input("Street Address: "), input("Email: "), input("Phone: ")]
+                    contact_writer.writerow(contact_list)
+                    count += 1
+                append_file.close()                                            # close the file
+
+
+            def output_table():
+                read_file = open('contacts.csv')                               # open the file output.csv
+                spreadsheet = csv.reader(read_file)                            # assign a variable and read the file
+                for row in spreadsheet:                                        # loop through the rows in the csv file
+                    print('{:<10} {:<20} {:<20} {:<10}'.format(*row))               # print each row with spacing
+
+
+            main()</code></pre>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <p>Here is a screen shot of my program in action. The user enters several contacts and the program
+        creates a table displaying all contacts.</p>
+    </div>
+
+    <div class="container-fluid">
+        <img src="Code-screenshot.PNG" height="554" width="774"/>
+    </div>
+</body>
+
+</html>

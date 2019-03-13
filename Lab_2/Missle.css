@@ -1,0 +1,24 @@
+#real-alert{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    border: black solid;
+    display: block;
+}
+
+#test-only{
+    text-decoration: none;
+    color: blue;
+    display: block;
+    border: black solid;
+}
+
+h1{
+    background-color: crimson;
+    text-align: center;
+}
+
+a{
+    padding: 10px;
+    margin: 20px;
+}

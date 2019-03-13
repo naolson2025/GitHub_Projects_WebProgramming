@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/canvasjs_min_js.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project_1/Excel_parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Code-screenshot.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Conference-registration-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Conference-registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Favorite-Program-Styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Favorite-Program.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Feedback-Styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Missle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/Missle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/StudentFeedback.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_2/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/Lab 3 Advanced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/Lab 3 Essentials.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_3/Window Size Example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Project_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_1/Project_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Project_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,14 +36,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project_1/Project_1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3400">
+              <caret line="200" column="2" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -44,16 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Project_1/Excel_parse.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project_1/Project_1.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2414">
-              <caret line="142" column="2" selection-start-line="142" selection-start-column="2" selection-end-line="142" selection-end-column="2" />
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -97,15 +111,15 @@
         <option value="$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html" />
         <option value="$PROJECT_DIR$/Lab_5/ISS_location/fetch.js" />
         <option value="$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" />
         <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.html" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.css" />
-        <option value="$PROJECT_DIR$/Project_1/Project_1.js" />
         <option value="$PROJECT_DIR$/Project_1/csv_reader.js" />
         <option value="$PROJECT_DIR$/Project_1/csv_reader2.js" />
         <option value="$PROJECT_DIR$/Project_1/Excel_parse.js" />
+        <option value="$PROJECT_DIR$/Project_1/Project_1.js" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -133,6 +147,11 @@
             <path>
               <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
@@ -220,7 +239,8 @@
       <workItem from="1551765108441" duration="3735000" />
       <workItem from="1552248056028" duration="1987000" />
       <workItem from="1552335233757" duration="7658000" />
-      <workItem from="1552422010164" duration="6096000" />
+      <workItem from="1552422010164" duration="8109000" />
+      <workItem from="1552509227079" duration="1494000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -425,11 +445,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552344530894</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Project 1 added Excel Parse and canvasjs">
+      <created>1552428475090</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1552428475090</updated>
+    </task>
+    <task id="LOCAL-00031" summary="working on structuring the two canvas charts side by side">
+      <created>1552430438716</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1552430438716</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61378000" />
+    <option name="totallyTimeSpent" value="64885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,8 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Git is working message" />
-    <MESSAGE value="Added to do list items" />
     <MESSAGE value="Added to do list items &quot;complete other homework&quot;" />
     <MESSAGE value="Added HTML file mouse_drag" />
     <MESSAGE value="Updated mouse_drag so the color can be changed, the shape is now a circle, and the circle size can be changed." />
@@ -532,7 +564,9 @@
     <MESSAGE value="Finished part 1" />
     <MESSAGE value="Working Vue app Ch 2 pg 24" />
     <MESSAGE value="Finished Vue Ch 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Vue Ch 2" />
+    <MESSAGE value="Project 1 added Excel Parse and canvasjs" />
+    <MESSAGE value="working on structuring the two canvas charts side by side" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on structuring the two canvas charts side by side" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
@@ -628,12 +662,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/Project_1/csv_reader.js" />
+    <entry file="file://$PROJECT_DIR$/Project_1/csv_reader2.js" />
+    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="3400">
+          <caret line="200" column="2" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="2" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/Excel_parse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_map.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -642,47 +688,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
+    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Lab3/Lab 3 Advanced.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/csv_reader.js">
+    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Lab3/Lab 3 Essentials.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
+        <state relative-caret-position="-162" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="142" column="2" selection-start-line="142" selection-start-column="2" selection-end-line="142" selection-end-column="2" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Day2/Conference-registration.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/csv_reader2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Hello World/Hello2.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Excel_parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Lab_2/Favorite-Program.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>

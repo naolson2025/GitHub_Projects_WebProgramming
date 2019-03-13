@@ -1,0 +1,12 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron{
+    text-align: center;
+    background-color: gray;
+}
+
+#gradient{
+    background-image: linear-gradient(to bottom right,#5592f4, #3ce861);
+}

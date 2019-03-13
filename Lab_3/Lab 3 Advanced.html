@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavasScript Functions with Arguments</title>
+
+        <style>
+            .tv-show {
+                color: green
+            }
+            .movie {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Enter a TV show (or movie) you like.</p>
+        <label for="show-name"></label><input id="show-name" name="show-name" type="text" class="form-control" required>
+        <input id="is-movie" type="checkbox"><label for="is-movie">Check if Movie</label>
+        <button id="save">Save to list</button>
+
+        <ul id="list"></ul>
+
+        <script>
+            document.querySelector('#save').addEventListener('click', function () {
+                let show_list = document.getElementById('list').getElementsByTagName('li');
+                let listLength = show_list.length;
+
+                for(let i = 0; i < listLength; i++){
+                    if(show_list[i].innerHTML === document.getElementById('show-name').value){
+                        alert('This item is already in the list');
+                        return false;
+                    }
+                }
+
+                if(document.getElementById('show-name').value.length === 0){
+                    console.log("show/movie text box is empty");
+                    return false;
+                }
+                else {
+                    if(document.getElementById('is-movie').checked === true){
+                        let input = document.getElementById('show-name').value;
+                        let my_list = document.querySelector('#list');
+                        let new_list_element = document.createElement("li");
+                        new_list_element.className = 'movie';
+                        new_list_element.innerHTML = `${input}`;
+                        my_list.appendChild(new_list_element);
+                        document.getElementById('show-name').value = '';
+                        document.getElementById('is-movie').checked = false;
+                    }
+                    else {
+                        let input = document.getElementById("show-name").value;
+                        let my_list = document.querySelector('#list');
+                        let new_list_element = document.createElement("li");
+                        new_list_element.className = 'tv-show';
+                        new_list_element.innerHTML = `${input}`;
+                        my_list.appendChild(new_list_element);
+                        document.getElementById('show-name').value = '';
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>

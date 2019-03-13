@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab 3 Essentials</title>
+    </head>
+
+    <body>
+        <h1>Create Your Own List</h1>
+
+        <input id="text-entry" name="text-entry" type="text" class="form-control" required>
+        <button id="Add">Add Item</button>
+        <button id="Clear">Clear the list!</button>
+
+        <!-- Empty unordered list -->
+        <ul id="My-list"></ul>
+
+        <h1>The size of your browser</h1>
+        <p id="width"></p>
+
+        <script>
+            //adds items to the list
+            document.querySelector('#Add').addEventListener('click', function () {
+                if (document.getElementById('text-entry').value.length > 50){
+                    alert("Your entry is too long.");
+                    return false;
+                }
+                else if (document.getElementById('text-entry').value.length < 1){
+                    return false;
+                }
+                else{
+                    let input = document.getElementById("text-entry").value;
+                    let my_list = document.querySelector('#My-list');
+                    let new_list_element = document.createElement("li");
+                    new_list_element.innerHTML = `${input}`;
+                    my_list.appendChild(new_list_element);
+                    document.getElementById('text-entry').value = '';
+                }
+            });
+
+            //Clears the list
+            document.querySelector('#Clear').addEventListener('click',function () {
+                let my_list_element = document.querySelector('#My-list');
+                my_list_element.innerHTML = '';
+            });
+        </script>
+
+        <script>
+            //started with class example from github
+            let width_para = document.querySelector("#width");
+            let height_of_window = window.innerHeight;
+            let width_of_window = window.innerWidth;
+            let total_pixes = height_of_window * width_of_window;
+            width_para.innerHTML = "Width = " + width_of_window + "\n" + "Height = " + height_of_window
+                + "\n" + "Total pixels in browser = " + total_pixes;
+
+            window.addEventListener("resize", windowWasResized);
+            function windowWasResized() {
+                alert("Browser re-sized");
+                width_para = document.getElementById("width");
+                width_of_window = window.innerWidth;
+                height_of_window = window.innerHeight;
+                total_pixes = height_of_window * width_of_window;
+                width_para.innerHTML = "Width = " + width_of_window + "\n" + "Height = " + height_of_window
+                    + "\n" + "Total pixels in browser = " + total_pixes;
+            }
+        </script>
+    </body>
+
+</html>
