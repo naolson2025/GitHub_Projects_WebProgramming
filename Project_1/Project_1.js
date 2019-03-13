@@ -4,9 +4,10 @@ window.onload = function () {
 
     // Expenses graph
     var totalExpenses = 4898.58;
+
     var expenseData = {
         "Total Expenses": [{
-            click: visitorsChartDrilldownHandler,
+            click: expensesChartDrillDownHandler,
             cursor: "pointer",
             explodeOnClick: false,
             innerRadius: "75%",
@@ -38,56 +39,17 @@ window.onload = function () {
                 { y: 363040, name: "Utilities", color: "#546BC1" }
             ]
         }],
-        // Need to create a data set for each expense in the Excel
-        "Alcohol": [{
-            color: "#E7823A",
-            name: "Alcohol",
-            type: "pie",
-            dataPoints: [
-                { x: new Date("1 Jan 2015"), y: 33000 },
-                { x: new Date("1 Feb 2015"), y: 35960 },
-                { x: new Date("1 Mar 2015"), y: 42160 },
-                { x: new Date("1 Apr 2015"), y: 42240 },
-                { x: new Date("1 May 2015"), y: 43200 },
-                { x: new Date("1 Jun 2015"), y: 40600 },
-                { x: new Date("1 Jul 2015"), y: 42560 },
-                { x: new Date("1 Aug 2015"), y: 44280 },
-                { x: new Date("1 Sep 2015"), y: 44800 },
-                { x: new Date("1 Oct 2015"), y: 48720 },
-                { x: new Date("1 Nov 2015"), y: 50840 },
-                { x: new Date("1 Dec 2015"), y: 51600 }
-            ]
-        }],
-        "Amazon Prime": [{
-            color: "#546BC1",
-            name: "Amazon Prime",
-            type: "column",
-            dataPoints: [
-                { x: new Date("1 Jan 2015"), y: 22000 },
-                { x: new Date("1 Feb 2015"), y: 26040 },
-                { x: new Date("1 Mar 2015"), y: 25840 },
-                { x: new Date("1 Apr 2015"), y: 23760 },
-                { x: new Date("1 May 2015"), y: 28800 },
-                { x: new Date("1 Jun 2015"), y: 29400 },
-                { x: new Date("1 Jul 2015"), y: 33440 },
-                { x: new Date("1 Aug 2015"), y: 37720 },
-                { x: new Date("1 Sep 2015"), y: 35200 },
-                { x: new Date("1 Oct 2015"), y: 35280 },
-                { x: new Date("1 Nov 2015"), y: 31160 },
-                { x: new Date("1 Dec 2015"), y: 34400 }
-            ]
-        }]
     };
 
     // IncomeData
     var incomeData = {
-        "Total Expenses": [{
+        "Total Income": [{
             click: incomeChartDrilldownHandler,
             cursor: "pointer",
             explodeOnClick: false,
             innerRadius: "75%",
             legendMarkerType: "square",
-            name: "Total Expenses",
+            name: "Total Income",
             radius: "100%",
             showInLegend: true,
             startAngle: 90,
@@ -116,17 +78,18 @@ window.onload = function () {
         }],
     };
 
-    var newVSReturningVisitorsOptions = {
+    // Expenses Graph options
+    var expensesOptions = {
         animationEnabled: true,
         theme: "light2",
         title: {
-            text: "New VS Amazon Prime"
+            text: "Expenses"
         },
         subtitles: [{
-            text: "Click on Any Segment to Drilldown",
-            backgroundColor: "#2eacd1",
+            text: "Click to Drill Down",
+            backgroundColor: "",   //#2eacd1
             fontSize: 16,
-            fontColor: "white",
+            fontColor: "Black",
             padding: 5
         }],
         legend: {
@@ -139,7 +102,8 @@ window.onload = function () {
         data: []
     };
 
-    var visitorsDrilldownedChartOptions = {
+    // Expense drill down chart options
+    var expenseDrillDownOptions = {
         animationEnabled: true,
         theme: "light2",
         axisX: {
@@ -158,13 +122,57 @@ window.onload = function () {
         data: []
     };
 
-    // Chart 1 Expenses on left
-    var chart = new CanvasJS.Chart("chartContainer", newVSReturningVisitorsOptions);
+    // Income Graph options
+    var incomeOptions = {
+        animationEnabled: true,
+        theme: "light2",
+        title: {
+            text: "Income"
+        },
+        subtitles: [{
+            text: "Click to Drill Down",
+            backgroundColor: "",  //#2eacd1
+            fontSize: 16,
+            fontColor: "Black",
+            padding: 5
+        }],
+        legend: {
+            fontFamily: "calibri",
+            fontSize: 14,
+            itemTextFormatter: function (e) {
+                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalExpenses * 100) + "%";
+            }
+        },
+        data: []
+    };
+
+    // Income drill down chart options
+    var incomeDrillDownOptions = {
+        animationEnabled: true,
+        theme: "light2",
+        axisX: {
+            labelFontColor: "#717171",
+            lineColor: "#a2a2a2",
+            tickColor: "#a2a2a2"
+        },
+        axisY: {
+            gridThickness: 0,
+            includeZero: false,
+            labelFontColor: "#717171",
+            lineColor: "#a2a2a2",
+            tickColor: "#a2a2a2",
+            lineThickness: 1
+        },
+        data: []
+    };
+
+    // Chart 1 Expenses on left functions ---------------------------------------------------
+    var chart = new CanvasJS.Chart("chartContainer", expensesOptions);
     chart.options.data = expenseData["Total Expenses"];
     chart.render();
 
-    function visitorsChartDrilldownHandler(e) {
-        chart = new CanvasJS.Chart("chartContainer", visitorsDrilldownedChartOptions);
+    function expensesChartDrillDownHandler(e) {
+        chart = new CanvasJS.Chart("chartContainer", expenseDrillDownOptions);
         chart.options.data = expenseData[e.dataPoint.name];
         chart.options.title = { text: e.dataPoint.name };
         chart.render();
@@ -173,19 +181,19 @@ window.onload = function () {
 
     $("#backButton").click(function() {
         $(this).toggleClass("invisible");
-        chart = new CanvasJS.Chart("chartContainer", newVSReturningVisitorsOptions);
+        chart = new CanvasJS.Chart("chartContainer", expensesOptions);
         chart.options.data = expenseData["Total Expenses"];
         chart.render();
     });
 
-    // Chart 2 Income on right
-    var chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions);
-    chart2.options.data = expenseData["Total Expenses"];
+    // Chart 2 Income on right functions -------------------------------------------------------
+    var chart2 = new CanvasJS.Chart("chartContainer2", incomeOptions);
+    chart2.options.data = incomeData["Total Income"];
     chart2.render();
 
     function incomeChartDrilldownHandler(e) {
-        chart2 = new CanvasJS.Chart("chartContainer2", visitorsDrilldownedChartOptions);
-        chart2.options.data = expenseData[e.dataPoint.name];
+        chart2 = new CanvasJS.Chart("chartContainer2", incomeDrillDownOptions);
+        chart2.options.data = incomeData[e.dataPoint.name];
         chart2.options.title = { text: e.dataPoint.name };
         chart2.render();
         $("#backButton2").toggleClass("invisible");
@@ -193,8 +201,8 @@ window.onload = function () {
 
     $("#backButton2").click(function() {
         $(this).toggleClass("invisible");
-        chart2 = new CanvasJS.Chart("chartContainer2", newVSReturningVisitorsOptions);
-        chart2.options.data = expenseData["Total Expenses"];
+        chart2 = new CanvasJS.Chart("chartContainer2", incomeOptions);
+        chart2.options.data = incomeData["Total Income"];
         chart2.render();
     });
 

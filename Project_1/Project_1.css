@@ -1,4 +1,4 @@
-#backButton {
+#backButton, #backButton2 {
     border-radius: 4px;
     padding: 8px;
     border: none;
@@ -12,4 +12,11 @@
 }
 .invisible {
     display: none;
+}
+.container{
+    padding: 5px;
+    margin: 5px;
+}
+#upload{
+    margin: 10px 10px 10px 15px;
 }
