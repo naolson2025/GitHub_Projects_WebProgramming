@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{Chart, canvasjs, canvasjs.min.js, d3.v5, jquery-1.11.1, jszip, leaflet, vue, xlsx, xlsx.full}" />
+    <file url="PROJECT" libraries="{@types/jquery, Chart, canvasjs, canvasjs.min.js, d3.v5, jquery-1.11.1, jszip, leaflet, vue, xlsx, xlsx.full}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

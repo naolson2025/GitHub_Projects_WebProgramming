@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project_1/create_graphs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_1/Excel_parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Excel_parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Project_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_1/Project_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_1/Project_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_1/create_graphs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/create_graphs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +30,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="238">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_1/Project_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-782">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -51,8 +52,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_1/create_graphs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="374">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +64,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_1/Excel_parse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="425">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1003">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -107,9 +123,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.css" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.js" />
-        <option value="$PROJECT_DIR$/Project_1/Excel_parse.js" />
         <option value="$PROJECT_DIR$/Project_1/create_graphs.js" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
+        <option value="$PROJECT_DIR$/Project_1/Excel_parse.js" />
       </list>
     </option>
   </component>
@@ -137,6 +153,11 @@
             <path>
               <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab_5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
@@ -225,7 +246,8 @@
       <workItem from="1552248056028" duration="1987000" />
       <workItem from="1552335233757" duration="7658000" />
       <workItem from="1552422010164" duration="8109000" />
-      <workItem from="1552509227079" duration="8426000" />
+      <workItem from="1552509227079" duration="8626000" />
+      <workItem from="1552600442778" duration="6771000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -458,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552510934334</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="working project 1 reading Excel">
+      <created>1552518119040</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1552518119040</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71817000" />
+    <option name="totallyTimeSpent" value="78788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,7 +506,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14963119" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14963119" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -488,7 +517,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.14951245" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3298731" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.2237601" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -540,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added HTML file mouse_drag" />
     <MESSAGE value="Updated mouse_drag so the color can be changed, the shape is now a circle, and the circle size can be changed." />
     <MESSAGE value="Updated the formatting of the buttons" />
     <MESSAGE value="Created a new HTML filed for the longest bridges map assignment" />
@@ -565,7 +593,8 @@
     <MESSAGE value="Project 1 added Excel Parse and canvasjs" />
     <MESSAGE value="working on structuring the two canvas charts side by side" />
     <MESSAGE value="Added Lab 1 - 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Lab 1 - 3" />
+    <MESSAGE value="working project 1 reading Excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="working project 1 reading Excel" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
@@ -582,16 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3548">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="n#!!doc" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,34 +720,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/create_graphs.js">
+    <entry file="file://$PROJECT_DIR$/Lab_3/Lab 3 Advanced.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/Project_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/create_graphs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/Excel_parse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="425">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="238">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
