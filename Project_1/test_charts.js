@@ -4,13 +4,15 @@ function createGraphs(total_expense, total_income, expense_object, income_object
 
     // TODO create two donut graphs: Expenses & income
 
-    // Expenses graph
+    // set total expenses
     var totalExpenses = total_expense;
+    // Set total income
     var totalIncome = total_income;
 
+    // set expense graph
     var expenseData = expense_object;
 
-    // IncomeData
+    // income graph
     var incomeData = income_object;
 
     // Expenses Graph options

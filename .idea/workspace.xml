@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project_1/test_charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project_1/test_excel_parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Excel_parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/excel_parse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_1/Project_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Project_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/create_graphs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_1/test_excel_parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/test_excel_parse.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="408">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -41,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_1/test_charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="46" column="6" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="46" selection-end-column="6" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -50,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project_1/test_excel_parse.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+            <state relative-caret-position="782">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -59,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-289">
               <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
             </state>
           </provider>
@@ -104,7 +98,6 @@
         <option value="$PROJECT_DIR$/Project_1/csv_reader.js" />
         <option value="$PROJECT_DIR$/Project_1/csv_reader2.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Project_1/Project_1.css" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.js" />
         <option value="$PROJECT_DIR$/Project_1/create_graphs.js" />
         <option value="$PROJECT_DIR$/Project_1/Test.html" />
@@ -112,8 +105,9 @@
         <option value="$PROJECT_DIR$/Project_1/test.js" />
         <option value="$PROJECT_DIR$/Project_1/excel_parse.js" />
         <option value="$PROJECT_DIR$/Project_1/charts.js" />
-        <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
+        <option value="$PROJECT_DIR$/Project_1/Project_1.css" />
         <option value="$PROJECT_DIR$/Project_1/test_charts.js" />
+        <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
         <option value="$PROJECT_DIR$/Project_1/test_excel_parse.js" />
       </list>
     </option>
@@ -135,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,7 +151,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +236,8 @@
       <workItem from="1552422010164" duration="8109000" />
       <workItem from="1552509227079" duration="8626000" />
       <workItem from="1552600442778" duration="6848000" />
-      <workItem from="1552686332139" duration="8136000" />
+      <workItem from="1552686332139" duration="12025000" />
+      <workItem from="1552750729256" duration="2153000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -489,11 +484,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552607420236</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="working on chart functions">
+      <created>1552694532654</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1552694532654</updated>
+    </task>
+    <task id="LOCAL-00037" summary="working on chart functions">
+      <created>1552698731033</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1552698731034</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87001000" />
+    <option name="totallyTimeSpent" value="93043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -571,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated mouse_drag so the color can be changed, the shape is now a circle, and the circle size can be changed." />
     <MESSAGE value="Updated the formatting of the buttons" />
     <MESSAGE value="Created a new HTML filed for the longest bridges map assignment" />
     <MESSAGE value="Added longest bridges styles and scripts" />
@@ -596,7 +604,8 @@
     <MESSAGE value="working on structuring the two canvas charts side by side" />
     <MESSAGE value="Added Lab 1 - 3" />
     <MESSAGE value="working project 1 reading Excel" />
-    <option name="LAST_COMMIT_MESSAGE" value="working project 1 reading Excel" />
+    <MESSAGE value="working on chart functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on chart functions" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
@@ -715,60 +724,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab_3/Lab 3 Advanced.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/create_graphs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/test.js" />
+    <entry file="file://$PROJECT_DIR$/Project_1/Test.html" />
+    <entry file="file://$PROJECT_DIR$/Project_1/create_graphs.js" />
     <entry file="file://$PROJECT_DIR$/Project_1/charts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -779,17 +746,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/test_charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="6" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="46" selection-end-column="6" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/test_excel_parse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+        <state relative-caret-position="782">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-//<!--stackoverflow below-->
+//Used stack overflow to find how to read an Excel file and parse to JSON
 
 var ExcelToJSON = function() {
 
@@ -17,8 +17,8 @@ var ExcelToJSON = function() {
             workbook.SheetNames.forEach(function(sheetName) {
                 var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
                 var json_object = JSON.stringify(XL_row_object);
-                JSON.parse(json_object);
-                getJsonVariable(json_object);
+                //JSON.parse(json_object);
+                getJsonVariable(JSON.parse(json_object));
                 // Paste the json into the text field
                 //jQuery( '#xlx_json' ).val( json_object );
             })
@@ -51,20 +51,39 @@ document.getElementById('upload').addEventListener('change', handleFileSelect, f
 
 // put the json into a variable to be used
 function getJsonVariable(json){
-    // console.log(json);
-    JSON.stringify(json);
+    // Total expenses = Done
+    // Total income = Done
     createGraphs(totalExpenses(json), totalIncome(json), createExpenseChart(json), createIncomeChart(json))
 }
 
 // calculate the total expense from the json data
 function totalExpenses(json) {
-    let json_object = JSON.parse(json);
-    console.log(json_object[0]);
+    // set total expenses variable which will be returned
+    let total_expenses = 0;
+
+    // Get the debit value from all transactions and add them together
+    json.forEach(function (transaction) {
+        if (parseFloat(transaction["Debit"]) > 0){
+            total_expenses += parseFloat(transaction["Debit"]);
+        }
+    });
+
+    return total_expenses;
 }
 
 // calculate the total income from the json data
 function totalIncome(json) {
+    // set total income variable
+    let total_income = 0;
 
+    // Get the credit value from all transactions and add them together
+    json.forEach(function (transaction) {
+        if (parseFloat(transaction["Credit"]) > 0){
+            total_income += parseFloat(transaction["Credit"]);
+        }
+    });
+
+    return total_income;
 }
 
 function createExpenseChart(json) {
