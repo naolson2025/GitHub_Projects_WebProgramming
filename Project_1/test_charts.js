@@ -1,12 +1,6 @@
 // found parts of code on canvasJS website under drill down chart
 
-function createGraphs(total_expense, total_income, expense_categories, income_categories) {
-
-    // set total expenses
-    var totalExpenses = total_expense;
-    // Set total income
-    var totalIncome = total_income;
-
+function createGraphs(total_expense, total_income, expense_categories, income_categories, expense_drill_downs) {
     // set expense graph
     var expenseData = {
         "Total Expenses": [{
@@ -22,25 +16,26 @@ function createGraphs(total_expense, total_income, expense_categories, income_ca
             type: "doughnut",
             dataPoints: expense_categories
         }],
-        "Alcohol": [{
-            color: "#E7823A",
-            name: "Alcohol",
-            type: "pie",
-            dataPoints: [
-                { x: new Date("1 Jan 2015"), y: 33000 },
-                { x: new Date("1 Feb 2015"), y: 35960 },
-                { x: new Date("1 Mar 2015"), y: 42160 },
-                { x: new Date("1 Apr 2015"), y: 42240 },
-                { x: new Date("1 May 2015"), y: 43200 },
-                { x: new Date("1 Jun 2015"), y: 40600 },
-                { x: new Date("1 Jul 2015"), y: 42560 },
-                { x: new Date("1 Aug 2015"), y: 44280 },
-                { x: new Date("1 Sep 2015"), y: 44800 },
-                { x: new Date("1 Oct 2015"), y: 48720 },
-                { x: new Date("1 Nov 2015"), y: 50840 },
-                { x: new Date("1 Dec 2015"), y: 51600 }
-            ]
-        }],
+        expense_drill_downs
+        // "Alcohol": [{
+        //     color: "#E7823A",
+        //     name: "Alcohol",
+        //     type: "pie",
+        //     dataPoints: [
+        //         { x: new Date("1 Jan 2015"), y: 33000 },
+        //         { x: new Date("1 Feb 2015"), y: 35960 },
+        //         { x: new Date("1 Mar 2015"), y: 42160 },
+        //         { x: new Date("1 Apr 2015"), y: 42240 },
+        //         { x: new Date("1 May 2015"), y: 43200 },
+        //         { x: new Date("1 Jun 2015"), y: 40600 },
+        //         { x: new Date("1 Jul 2015"), y: 42560 },
+        //         { x: new Date("1 Aug 2015"), y: 44280 },
+        //         { x: new Date("1 Sep 2015"), y: 44800 },
+        //         { x: new Date("1 Oct 2015"), y: 48720 },
+        //         { x: new Date("1 Nov 2015"), y: 50840 },
+        //         { x: new Date("1 Dec 2015"), y: 51600 }
+        //     ]
+        // }],
     };
 
     // income graph
@@ -65,7 +60,7 @@ function createGraphs(total_expense, total_income, expense_categories, income_ca
         animationEnabled: true,
         theme: "light2",
         title: {
-            text: "Expenses"
+            text: `Expenses $${total_expense.toFixed(2)}`
         },
         subtitles: [{
             text: "Click to Drill Down",
@@ -78,7 +73,7 @@ function createGraphs(total_expense, total_income, expense_categories, income_ca
             fontFamily: "calibri",
             fontSize: 14,
             itemTextFormatter: function (e) {
-                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalExpenses * 100) + "%";
+                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / total_expense * 100) + "%";
             }
         },
         data: []
@@ -109,7 +104,7 @@ function createGraphs(total_expense, total_income, expense_categories, income_ca
         animationEnabled: true,
         theme: "light2",
         title: {
-            text: "Income"
+            text: `Income $${total_income.toFixed(2)}`
         },
         subtitles: [{
             text: "Click to Drill Down",
@@ -122,7 +117,7 @@ function createGraphs(total_expense, total_income, expense_categories, income_ca
             fontFamily: "calibri",
             fontSize: 14,
             itemTextFormatter: function (e) {
-                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalIncome * 100) + "%";
+                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / total_income * 100) + "%";
             }
         },
         data: []
@@ -154,8 +149,25 @@ function createGraphs(total_expense, total_income, expense_categories, income_ca
     chart.render();
 
     function expensesChartDrillDownHandler(e) {
+        // console.log(e);
+        // console.log(e.dataPoint.name);
+        // console.log(expenseData.expense_drill_downs);
+
         chart = new CanvasJS.Chart("chartContainer", expenseDrillDownOptions);
-        chart.options.data = expenseData[e.dataPoint.name];
+        //chart.options.data = expenseData[e.dataPoint.name];
+        //chart.options.data = expenseData[expense_drill_downs.name[e.dataPoint.name]];
+
+        //console.log(expense_drill_downs);
+        expenseData.expense_drill_downs.forEach(function (category) {
+            // console.log(category);
+
+            if (category[0].name.toString() === e.dataPoint.name.toString()){
+               chart.options.data = category;
+               // console.log(chart.options.data)
+                //console.log("Success");
+           }
+        });
+
         chart.options.title = { text: e.dataPoint.name };
         chart.render();
         $("#backButton").toggleClass("invisible");

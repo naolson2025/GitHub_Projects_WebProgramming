@@ -53,7 +53,13 @@ document.getElementById('upload').addEventListener('change', handleFileSelect, f
 function getJsonVariable(json){
     // Total expenses = Done
     // Total income = Done
-    createGraphs(totalExpenses(json), totalIncome(json), getExpenseCategories(json), getIncomeCategories(json))
+
+    createGraphs(
+        totalExpenses(json),
+        totalIncome(json),
+        getExpenseCategories(json),
+        getIncomeCategories(json),
+        expenseDrillDowns(json))
 }
 
 // calculate the total expense from the json data
@@ -142,6 +148,99 @@ function getExpenseCategories(json) {
     });
 
     return all_expenses;
+}
+
+function expenseDrillDowns(json) {
+
+    let all_expense_drill_downs = [];
+
+    var warm_colors = {
+        1 : "#ff0000",
+        2 : "#ff2a00",
+        4 : "#ff4300",
+        5 : "#ff8300",
+        8 : "#faff0c",
+        6 : "#ffbe0c",
+        9 : "#d2ff0c",
+        7 : "#ffde0c",
+        3 : "#ff4242",
+        10 : "#ff6868",
+        11 : "#ff8787",
+        12 : "#ffb5b5",
+        13 : "#ffd8d8",
+        14 : "#ffe59e",
+        15 : "#fffb87",
+    };
+
+    // If there are more than 15 of any category of expense resent the color picker.
+    let color_picker = 1;
+
+    json.forEach(function (transaction) {
+
+        // console.log(all_expense_drill_downs);
+
+        if (color_picker > 15){
+            color_picker = 1;
+        }
+
+        // console.log("transaction: " + transaction);
+
+        // check to see if the transaction is an expense by checking for debit value
+        if (parseFloat(transaction["Debit"]) > 0){
+            // Check to see if the category already exists
+
+            // console.log("Transaction is debit: " + transaction["Debit"]);
+
+            let exists = false;
+            let location = 0;
+            for (let i = 0; i < all_expense_drill_downs.length; i++) {
+
+                // console.log(all_expense_drill_downs[i][0].name);
+
+                if (all_expense_drill_downs[i][0].name === transaction["Category"]){
+
+                    // console.log("All expenses drill downs [i]" + all_expense_drill_downs[i]);
+                    // console.log("Category already Exists true:" + transaction["Category"]);
+
+                    exists = true;
+                    location = i;
+                    break;
+                }
+            }
+
+            // if it does exist then add the transaction debit to the existing expense
+            if (exists){
+
+                console.log("Append to existing object");
+
+                console.log(all_expense_drill_downs[location]);
+                console.log(all_expense_drill_downs[location][0].dataPoints);
+                all_expense_drill_downs[location][0].dataPoints.push({
+                    color : warm_colors[color_picker],
+                        name : transaction["Description"],
+                        y : parseFloat(transaction["Debit"])});
+                color_picker++;
+            }
+            else {
+                // if the category does not already exist create an object for it and add it to the array
+                let obj = [{
+                    name: transaction["Category"],
+                    type : "pie",
+                    dataPoints: [
+                        {color : warm_colors[color_picker], name : transaction["Description"], y : parseFloat(transaction["Debit"])}
+                    ]
+                }];
+
+                all_expense_drill_downs.push(obj);
+
+                // console.log("Created new object " + obj);
+
+                color_picker++;
+            }
+        }
+    });
+
+    return all_expense_drill_downs;
 }
 
 
