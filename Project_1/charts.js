@@ -24,7 +24,7 @@ window.onload = function () {
                 // The y number should change based on the Excel, will need to put variables in place
                 // Colors should all be different, but warm colors for expenses: red, orange, yellow - darker for largest expense
                 // Expense name will need to be a variable too
-                { y: 14.27, name: "Alcohol", color: "#ef0b2e" },
+                { y: 300000, name: "Alcohol", color: "#ef0b2e" },
                 { y: 363040, name: "Amazon Prime", color: "#546BC1" },
                 { y: 363040, name: "Car Loan", color: "#546BC1" },
                 { y: 363040, name: "Eating Out", color: "#546BC1" },
@@ -39,6 +39,25 @@ window.onload = function () {
                 { y: 363040, name: "Student Loan", color: "#546BC1" },
                 { y: 363040, name: "Spotify", color: "#546BC1" },
                 { y: 363040, name: "Utilities", color: "#546BC1" }
+            ]
+        }],
+        "Alcohol": [{
+            color: "#E7823A",
+            name: "Alcohol",
+            type: "pie",
+            dataPoints: [
+                { x: new Date("1 Jan 2015"), y: 33000 },
+                { x: new Date("1 Feb 2015"), y: 35960 },
+                { x: new Date("1 Mar 2015"), y: 42160 },
+                { x: new Date("1 Apr 2015"), y: 42240 },
+                { x: new Date("1 May 2015"), y: 43200 },
+                { x: new Date("1 Jun 2015"), y: 40600 },
+                { x: new Date("1 Jul 2015"), y: 42560 },
+                { x: new Date("1 Aug 2015"), y: 44280 },
+                { x: new Date("1 Sep 2015"), y: 44800 },
+                { x: new Date("1 Oct 2015"), y: 48720 },
+                { x: new Date("1 Nov 2015"), y: 50840 },
+                { x: new Date("1 Dec 2015"), y: 51600 }
             ]
         }],
     };

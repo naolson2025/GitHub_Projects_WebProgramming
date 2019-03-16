@@ -20,5 +20,6 @@
     <orderEntry type="library" name="jszip" level="application" />
     <orderEntry type="library" name="xlsx.full" level="application" />
     <orderEntry type="library" name="@types/jquery" level="application" />
+    <orderEntry type="library" name="@types/exceljs" level="application" />
   </component>
 </module>
