@@ -51,14 +51,26 @@ document.getElementById('upload').addEventListener('change', handleFileSelect, f
 
 // put the json into a variable to be used
 function getJsonVariable(json){
-    createExpenseChart(json);
-    createIncomeChart(json);
+    // console.log(json);
+    JSON.stringify(json);
+    createGraphs(totalExpenses(json), totalIncome(json), createExpenseChart(json), createIncomeChart(json))
 }
 
-function createExpenseChart() {
+// calculate the total expense from the json data
+function totalExpenses(json) {
+    let json_object = JSON.parse(json);
+    console.log(json_object[0]);
+}
+
+// calculate the total income from the json data
+function totalIncome(json) {
+
+}
+
+function createExpenseChart(json) {
     // Create an object of colors
     // Expenses will be warm colors
-    var colors = {
+    var warm_colors = {
         1 : "#ff0000",
         2 : "#ff2a00",
         4 : "#ff4300",
@@ -134,22 +146,22 @@ function createExpenseChart() {
 
 function createIncomeChart(json) {
     // chart of colors income will be in cool colors
-    var colors = {
-        1 : "#ff0000",
-        2 : "#ff2a00",
-        4 : "#ff4300",
-        5 : "#ff8300",
-        8 : "#faff0c",
-        6 : "#ffbe0c",
-        9 : "#d2ff0c",
-        7 : "#ffde0c",
-        3 : "#ff4242",
-        10 : "#ff6868",
-        11 : "#ff8787",
-        12 : "#ffb5b5",
-        13 : "#ffd8d8",
-        14 : "#ffe59e",
-        15 : "#fffb87",
+    var cool_colors = {
+        1 : "#76ff00",
+        2 : "#afff6b",
+        4 : "#26ff00",
+        5 : "#148c00",
+        8 : "#6bffad",
+        6 : "#0bed70",
+        9 : "#07f4ec",
+        7 : "#56fff9",
+        3 : "#51b0ff",
+        10 : "#008bff",
+        11 : "#005ead",
+        12 : "#0b1ae8",
+        13 : "#a465f7",
+        14 : "#8509ea",
+        15 : "#cb00ff",
     };
 
     var incomeData = {

@@ -24,7 +24,7 @@
         <script async defer src="test_charts.js"></script>
 
         <!--js for Excel Parse-->
-        <script async defer src="excel_parse.js"></script>
+        <script async defer src="test_excel_parse.js"></script>
 
         <title>Monthly Accounting</title>
     </head>
@@ -36,6 +36,11 @@
             <p class="lead">This web app will read an Excel spreadsheet and create graphs showing income and expenses.</p>
             <p>It will accept spreadsheets that contain 5 columns: Date, Description of expense/income, Debit, Credit, and Category</p>
         </div>
+
+        <!--Create the upload button for Excel-->
+        <form enctype="multipart/form-data">
+            <input id="upload" type=file  name="files[]">
+        </form>
 
         <!--Creating container to put the two charts side by side-->
         <div class="container">
@@ -53,11 +58,6 @@
             </div>
         </div>
 
-        <!--Create the upload button for Excel-->
-        <form enctype="multipart/form-data">
-            <input id="upload" type=file  name="files[]">
-            <!--<output id="list"></output>-->
-        </form>
-            <!--<textarea class="form-control" rows=35 cols=120 id="xlx_json"></textarea>-->
+
     </body>
 </html>
