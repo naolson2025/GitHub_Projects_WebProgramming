@@ -1,8 +1,6 @@
 // found parts of code on canvasJS website under drill down chart
 
-function createGraphs(total_expense, total_income, expense_object, income_object) {
-
-    // TODO create two donut graphs: Expenses & income
+function createGraphs(total_expense, total_income, expense_categories, income_categories) {
 
     // set total expenses
     var totalExpenses = total_expense;
@@ -10,10 +8,57 @@ function createGraphs(total_expense, total_income, expense_object, income_object
     var totalIncome = total_income;
 
     // set expense graph
-    var expenseData = expense_object;
+    var expenseData = {
+        "Total Expenses": [{
+            click: expensesChartDrillDownHandler,
+            cursor: "pointer",
+            explodeOnClick: false,
+            innerRadius: "75%",
+            legendMarkerType: "square",
+            name: "Total Expenses",
+            radius: "100%",
+            showInLegend: true,
+            startAngle: 90,
+            type: "doughnut",
+            dataPoints: expense_categories
+        }],
+        "Alcohol": [{
+            color: "#E7823A",
+            name: "Alcohol",
+            type: "pie",
+            dataPoints: [
+                { x: new Date("1 Jan 2015"), y: 33000 },
+                { x: new Date("1 Feb 2015"), y: 35960 },
+                { x: new Date("1 Mar 2015"), y: 42160 },
+                { x: new Date("1 Apr 2015"), y: 42240 },
+                { x: new Date("1 May 2015"), y: 43200 },
+                { x: new Date("1 Jun 2015"), y: 40600 },
+                { x: new Date("1 Jul 2015"), y: 42560 },
+                { x: new Date("1 Aug 2015"), y: 44280 },
+                { x: new Date("1 Sep 2015"), y: 44800 },
+                { x: new Date("1 Oct 2015"), y: 48720 },
+                { x: new Date("1 Nov 2015"), y: 50840 },
+                { x: new Date("1 Dec 2015"), y: 51600 }
+            ]
+        }],
+    };
 
     // income graph
-    var incomeData = income_object;
+    var incomeData = {
+        "Total Income": [{
+            click: incomeChartDrilldownHandler,
+            cursor: "pointer",
+            explodeOnClick: false,
+            innerRadius: "75%",
+            legendMarkerType: "square",
+            name: "Total Income",
+            radius: "100%",
+            showInLegend: true,
+            startAngle: 90,
+            type: "doughnut",
+            dataPoints: income_categories
+        }],
+    };
 
     // Expenses Graph options
     var expensesOptions = {

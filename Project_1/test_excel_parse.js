@@ -53,7 +53,7 @@ document.getElementById('upload').addEventListener('change', handleFileSelect, f
 function getJsonVariable(json){
     // Total expenses = Done
     // Total income = Done
-    createGraphs(totalExpenses(json), totalIncome(json), createExpenseChart(json), createIncomeChart(json))
+    createGraphs(totalExpenses(json), totalIncome(json), getExpenseCategories(json), getIncomeCategories(json))
 }
 
 // calculate the total expense from the json data
@@ -86,9 +86,11 @@ function totalIncome(json) {
     return total_income;
 }
 
-function createExpenseChart(json) {
-    // Create an object of colors
-    // Expenses will be warm colors
+// Done
+function getExpenseCategories(json) {
+    // Create a map to store each category and the total expenses for that category
+    let all_expenses = [];
+
     var warm_colors = {
         1 : "#ff0000",
         2 : "#ff2a00",
@@ -107,63 +109,46 @@ function createExpenseChart(json) {
         15 : "#fffb87",
     };
 
-    var chart_object = {
-        "Total Expenses": [{
-        click: expensesChartDrillDownHandler,
-        cursor: "pointer",
-        explodeOnClick: false,
-        innerRadius: "75%",
-        legendMarkerType: "square",
-        name: "Total Expenses",
-        radius: "100%",
-        showInLegend: true,
-        startAngle: 90,
-        type: "doughnut",
-        dataPoints: [
-            // Need to find a way to create an object for each expense on the Excel
-            // The y number should change based on the Excel, will need to put variables in place
-            // Colors should all be different, but warm colors for expenses: red, orange, yellow - darker for largest expense
-            // Expense name will need to be a variable too
-            { y: 300000, name: "Alcohol", color: "#ef0b2e" },
-            { y: 363040, name: "Amazon Prime", color: "#546BC1" },
-            { y: 363040, name: "Car Loan", color: "#546BC1" },
-            { y: 363040, name: "Eating Out", color: "#546BC1" },
-            { y: 363040, name: "Entertainment", color: "#546BC1" },
-            { y: 363040, name: "Gas", color: "#546BC1" },
-            { y: 363040, name: "Groceries", color: "#546BC1" },
-            { y: 363040, name: "MCTC Parking", color: "#546BC1" },
-            { y: 363040, name: "Medical", color: "#546BC1" },
-            { y: 363040, name: "Misc", color: "#546BC1" },
-            { y: 363040, name: "Rent", color: "#546BC1" },
-            { y: 363040, name: "Stocks", color: "#546BC1" },
-            { y: 363040, name: "Student Loan", color: "#546BC1" },
-            { y: 363040, name: "Spotify", color: "#546BC1" },
-            { y: 363040, name: "Utilities", color: "#546BC1" }
-        ]
-    }],
-        "Alcohol": [{
-        color: "#E7823A",
-        name: "Alcohol",
-        type: "pie",
-        dataPoints: [
-            { x: new Date("1 Jan 2015"), y: 33000 },
-            { x: new Date("1 Feb 2015"), y: 35960 },
-            { x: new Date("1 Mar 2015"), y: 42160 },
-            { x: new Date("1 Apr 2015"), y: 42240 },
-            { x: new Date("1 May 2015"), y: 43200 },
-            { x: new Date("1 Jun 2015"), y: 40600 },
-            { x: new Date("1 Jul 2015"), y: 42560 },
-            { x: new Date("1 Aug 2015"), y: 44280 },
-            { x: new Date("1 Sep 2015"), y: 44800 },
-            { x: new Date("1 Oct 2015"), y: 48720 },
-            { x: new Date("1 Nov 2015"), y: 50840 },
-            { x: new Date("1 Dec 2015"), y: 51600 }
-        ]
-    }],
-    }
+    let color_picker = 1;
+    json.forEach(function (transaction) {
+        // check to see if the transaction is an expense by checking for debit value
+        if (parseFloat(transaction["Debit"]) > 0){
+            // Check to see if the category already exists
+            let exists = false;
+            let location = 0;
+            for (let i = 0; i < all_expenses.length; i++) {
+                if (all_expenses[i].name === transaction["Category"]){
+                    exists = true;
+                    location = i;
+                    break;
+                }
+            }
+
+            // if it does exist then add the transaction debit to the existing expense
+            if (exists){
+                all_expenses[location].y = all_expenses[location].y + parseFloat(transaction["Debit"]);
+            }
+            else {
+                // if the category does not already exist create an object for it and add it to the array
+                let obj = {
+                    y: parseFloat(transaction["Debit"]),
+                    name: transaction["Category"],
+                    color: warm_colors[color_picker]
+                };
+                all_expenses.push(obj);
+                color_picker++;
+            }
+        }
+    });
+
+    return all_expenses;
 }
 
-function createIncomeChart(json) {
+
+function getIncomeCategories(json) {
+    // Create a map to store each category and the total expenses for that category
+    let all_income = [];
+
     // chart of colors income will be in cool colors
     var cool_colors = {
         1 : "#76ff00",
@@ -183,41 +168,38 @@ function createIncomeChart(json) {
         15 : "#cb00ff",
     };
 
-    var incomeData = {
-        "Total Income": [{
-            click: incomeChartDrilldownHandler,
-            cursor: "pointer",
-            explodeOnClick: false,
-            innerRadius: "75%",
-            legendMarkerType: "square",
-            name: "Total Income",
-            radius: "100%",
-            showInLegend: true,
-            startAngle: 90,
-            type: "doughnut",
-            dataPoints: [
-                // Need to find a way to create an object for each expense on the Excel
-                // The y number should change based on the Excel, will need to put variables in place
-                // Colors should all be different, but warm colors for expenses: red, orange, yellow - darker for largest expense
-                // Expense name will need to be a variable too
-                {y: 14.27, name: "Alcohol", color: "#ef0b2e"},
-                {y: 363040, name: "Amazon Prime", color: "#546BC1"},
-                {y: 363040, name: "Car Loan", color: "#546BC1"},
-                {y: 363040, name: "Eating Out", color: "#546BC1"},
-                {y: 363040, name: "Entertainment", color: "#546BC1"},
-                {y: 363040, name: "Gas", color: "#546BC1"},
-                {y: 363040, name: "Groceries", color: "#546BC1"},
-                {y: 363040, name: "MCTC Parking", color: "#546BC1"},
-                {y: 363040, name: "Medical", color: "#546BC1"},
-                {y: 363040, name: "Misc", color: "#546BC1"},
-                {y: 363040, name: "Rent", color: "#546BC1"},
-                {y: 363040, name: "Stocks", color: "#546BC1"},
-                {y: 363040, name: "Student Loan", color: "#546BC1"},
-                {y: 363040, name: "Spotify", color: "#546BC1"},
-                {y: 363040, name: "Utilities", color: "#546BC1"}
-            ]
-        }],
-    };
+    let color_picker = 1;
+    json.forEach(function (transaction) {
+        // check to see if the transaction is an expense by checking for credit value
+        if (parseFloat(transaction["Credit"]) > 0){
+            // Check to see if the category already exists
+            let exists = false;
+            let location = 0;
+            for (let i = 0; i < all_income.length; i++) {
+                if (all_income[i].name === transaction["Category"]){
+                    exists = true;
+                    location = i;
+                    break;
+                }
+            }
+
+            // if it does exist then add the transaction credit to the existing expense
+            if (exists){
+                all_income[location].y = all_income[location].y + parseFloat(transaction["Credit"]);
+            }
+            else {
+                // if the category does not already exist create an object for it and add it to the array
+                let obj = {
+                    y: parseFloat(transaction["Credit"]),
+                    name: transaction["Category"],
+                    color: cool_colors[color_picker]
+                };
+                all_income.push(obj);
+                color_picker++;
+            }
+        }
+    });
+    return all_income;
 }
 
 
