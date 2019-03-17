@@ -15,11 +15,14 @@
 }
 .container{
     padding: 5px;
-    margin: 5px;
 }
 #upload{
-    margin: 10px 10px 10px 15px;
+    text-align: left;
 }
 .jumbotron{
     text-align: center;
+    padding-bottom: 32px;
+}
+#upload-form{
+    text-align: left;
 }

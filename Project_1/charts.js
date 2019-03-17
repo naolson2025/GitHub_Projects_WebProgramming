@@ -1,12 +1,7 @@
 // found parts of code on canvasJS website under drill down chart
 
-window.onload = function () {
-
-    // TODO create two donut graphs: Expenses & income
-
-    // Expenses graph
-    var totalExpenses = 4898.58;
-
+function createGraphs(total_expense, total_income, expense_categories, income_categories, expense_drill_downs, income_drill_downs) {
+    // set expense graph
     var expenseData = {
         "Total Expenses": [{
             click: expensesChartDrillDownHandler,
@@ -19,50 +14,12 @@ window.onload = function () {
             showInLegend: true,
             startAngle: 90,
             type: "doughnut",
-            dataPoints: [
-                // Need to find a way to create an object for each expense on the Excel
-                // The y number should change based on the Excel, will need to put variables in place
-                // Colors should all be different, but warm colors for expenses: red, orange, yellow - darker for largest expense
-                // Expense name will need to be a variable too
-                { y: 300000, name: "Alcohol", color: "#ef0b2e" },
-                { y: 363040, name: "Amazon Prime", color: "#546BC1" },
-                { y: 363040, name: "Car Loan", color: "#546BC1" },
-                { y: 363040, name: "Eating Out", color: "#546BC1" },
-                { y: 363040, name: "Entertainment", color: "#546BC1" },
-                { y: 363040, name: "Gas", color: "#546BC1" },
-                { y: 363040, name: "Groceries", color: "#546BC1" },
-                { y: 363040, name: "MCTC Parking", color: "#546BC1" },
-                { y: 363040, name: "Medical", color: "#546BC1" },
-                { y: 363040, name: "Misc", color: "#546BC1" },
-                { y: 363040, name: "Rent", color: "#546BC1" },
-                { y: 363040, name: "Stocks", color: "#546BC1" },
-                { y: 363040, name: "Student Loan", color: "#546BC1" },
-                { y: 363040, name: "Spotify", color: "#546BC1" },
-                { y: 363040, name: "Utilities", color: "#546BC1" }
-            ]
+            dataPoints: expense_categories
         }],
-        "Alcohol": [{
-            color: "#E7823A",
-            name: "Alcohol",
-            type: "pie",
-            dataPoints: [
-                { x: new Date("1 Jan 2015"), y: 33000 },
-                { x: new Date("1 Feb 2015"), y: 35960 },
-                { x: new Date("1 Mar 2015"), y: 42160 },
-                { x: new Date("1 Apr 2015"), y: 42240 },
-                { x: new Date("1 May 2015"), y: 43200 },
-                { x: new Date("1 Jun 2015"), y: 40600 },
-                { x: new Date("1 Jul 2015"), y: 42560 },
-                { x: new Date("1 Aug 2015"), y: 44280 },
-                { x: new Date("1 Sep 2015"), y: 44800 },
-                { x: new Date("1 Oct 2015"), y: 48720 },
-                { x: new Date("1 Nov 2015"), y: 50840 },
-                { x: new Date("1 Dec 2015"), y: 51600 }
-            ]
-        }],
+        expense_drill_downs
     };
 
-    // IncomeData
+    // income graph
     var incomeData = {
         "Total Income": [{
             click: incomeChartDrilldownHandler,
@@ -75,28 +32,9 @@ window.onload = function () {
             showInLegend: true,
             startAngle: 90,
             type: "doughnut",
-            dataPoints: [
-                // Need to find a way to create an object for each expense on the Excel
-                // The y number should change based on the Excel, will need to put variables in place
-                // Colors should all be different, but warm colors for expenses: red, orange, yellow - darker for largest expense
-                // Expense name will need to be a variable too
-                {y: 14.27, name: "Alcohol", color: "#ef0b2e"},
-                {y: 363040, name: "Amazon Prime", color: "#546BC1"},
-                {y: 363040, name: "Car Loan", color: "#546BC1"},
-                {y: 363040, name: "Eating Out", color: "#546BC1"},
-                {y: 363040, name: "Entertainment", color: "#546BC1"},
-                {y: 363040, name: "Gas", color: "#546BC1"},
-                {y: 363040, name: "Groceries", color: "#546BC1"},
-                {y: 363040, name: "MCTC Parking", color: "#546BC1"},
-                {y: 363040, name: "Medical", color: "#546BC1"},
-                {y: 363040, name: "Misc", color: "#546BC1"},
-                {y: 363040, name: "Rent", color: "#546BC1"},
-                {y: 363040, name: "Stocks", color: "#546BC1"},
-                {y: 363040, name: "Student Loan", color: "#546BC1"},
-                {y: 363040, name: "Spotify", color: "#546BC1"},
-                {y: 363040, name: "Utilities", color: "#546BC1"}
-            ]
+            dataPoints: income_categories
         }],
+        income_drill_downs
     };
 
     // Expenses Graph options
@@ -104,7 +42,7 @@ window.onload = function () {
         animationEnabled: true,
         theme: "light2",
         title: {
-            text: "Expenses"
+            text: `Expenses $${total_expense.toFixed(2)}`
         },
         subtitles: [{
             text: "Click to Drill Down",
@@ -117,7 +55,7 @@ window.onload = function () {
             fontFamily: "calibri",
             fontSize: 14,
             itemTextFormatter: function (e) {
-                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalExpenses * 100) + "%";
+                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / total_expense * 100) + "%";
             }
         },
         data: []
@@ -148,7 +86,7 @@ window.onload = function () {
         animationEnabled: true,
         theme: "light2",
         title: {
-            text: "Income"
+            text: `Income $${total_income.toFixed(2)}`
         },
         subtitles: [{
             text: "Click to Drill Down",
@@ -161,7 +99,7 @@ window.onload = function () {
             fontFamily: "calibri",
             fontSize: 14,
             itemTextFormatter: function (e) {
-                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalExpenses * 100) + "%";
+                return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / total_income * 100) + "%";
             }
         },
         data: []
@@ -194,7 +132,12 @@ window.onload = function () {
 
     function expensesChartDrillDownHandler(e) {
         chart = new CanvasJS.Chart("chartContainer", expenseDrillDownOptions);
-        chart.options.data = expenseData[e.dataPoint.name];
+        expenseData.expense_drill_downs.forEach(function (category) {
+            if (category[0].name.toString() === e.dataPoint.name.toString()){
+               chart.options.data = category;
+           }
+        });
+
         chart.options.title = { text: e.dataPoint.name };
         chart.render();
         $("#backButton").toggleClass("invisible");
@@ -214,7 +157,13 @@ window.onload = function () {
 
     function incomeChartDrilldownHandler(e) {
         chart2 = new CanvasJS.Chart("chartContainer2", incomeDrillDownOptions);
-        chart2.options.data = incomeData[e.dataPoint.name];
+        //chart2.options.data = incomeData[e.dataPoint.name];
+        incomeData.income_drill_downs.forEach(function (category) {
+           if (category[0].name.toString() === e.dataPoint.name.toString()){
+               chart2.options.data = category;
+           }
+        });
+
         chart2.options.title = { text: e.dataPoint.name };
         chart2.render();
         $("#backButton2").toggleClass("invisible");
@@ -227,4 +176,4 @@ window.onload = function () {
         chart2.render();
     });
 
-};
+}
