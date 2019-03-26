@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue.js Pet Depot</title>
+        <!--Vue Library-->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!--Personal CSS-->
+        <link rel="stylesheet" type="text/css" href="Vue_app_reading.css"/>
+
+        <!-- Bootstrap Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+
+    <!--Website body-->
+    <body>
+    <!--Establish the div for the Vue instance-->
+        <div id="app">
+            <header>
+                <!--call the site name from the webstore Vue instance-->
+                <!--Use CSS to center the h1, add padding, and color-->
+                <div class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <h1>{{ sitename }}</h1>
+                    </div>
+
+                    <div class="nav navbar-nav navbar-right cart">
+                        <!--   Activates the showCheckout method on click of button   -->
+                        <button type="button" class="btn btn-default btn-lg" v-on:click="showCheckout">
+                            <span class="glyphicon glyphicon-shopping-cart">{{ cartItemCount}}</span> Checkout
+                        </button>
+                    </div>
+                </div>
+
+            </header>
+
+            <!--Create main segment-->
+            <main>
+                <div class="row">
+                    <!--Add if-else functionality, if showProduct is true then proceed-->
+                    <div v-if="showProduct">
+                    <!--Add bootstrap columns to adjust website for browser size change-->
+                        <div class="col-md-2 col-md-offset-1">
+                            <figure>
+                                <!--Call image from Vue instance product-->
+                                <img v-bind:src="product.image">
+                            </figure>
+                        </div>
+                        <!--Add bootstrap columns to adjust website for browser size change-->
+                        <div class="col-md-6 col-md-offset-2 description">
+                            <!--Call title from vue instance-->
+                            <h1 v-text="product.title"></h1>
+                            <!--Call description from vue instance-->
+                            <p v-html="product.description"></p>
+                            <!--call price from vue instance, and call the formatPrice function to make is $ format-->
+                            <p class="price">
+                                {{product.price | formatPrice}}
+                            </p>
+
+                            <!-- Add button that adds an item to the cart on click-->
+                            <button class=" btn btn-primary btn-lg"
+                                    v-on:click="addToCart"
+                                    v-if="canAddToCart">Add to cart</button>
+                            <button disabled="true" class=" btn btn-primary btn-lg" v-else >Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div v-else>
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Pet Depot Checkout</div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+
+                                        <div class="col-md-12">
+                                            <h4><strong>Enter Your Information</strong></h4>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <strong>First Name:</strong>
+                                                <!-- Bind firstName to order -->
+                                                <input v-model.trim="order.firstName" class="form-control" />
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <strong>Last Name:</strong>
+                                                <!-- Bind lastName to order -->
+                                                <input v-model.trim="order.lastName" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12"><strong>Address:</strong></div>
+                                            <div class="col-md-12">
+                                                <!-- Trim used to get rid of white space entered by user-->
+                                                <input v-model.trim="order.address" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12"><strong>City:</strong></div>
+                                            <div class="col-md-12">
+                                                <input v-model.trim="order.city" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-2">
+                                                <strong>State:</strong>
+                                                <!-- loop through the states and bind each value-->
+                                                <select v-model="order.state" class="form-control">
+                                                    <option disabled value="">State</option>
+                                                    <!-- key property is displayed for chosen option-->
+                                                    <option v-for="(state, key) in states" v-bind:value="state">
+                                                        {{key}}
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-4">
+                                                <strong>Zip / Postal Code:</strong>
+                                                <input v-model.number="order.zip"
+                                                       class="form-control"
+                                                       type="number"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 boxes">
+                                                <!-- if the check box is check order will be bound to sendGift-->
+                                                <!-- if not checked it will be bound to dontSendGift-->
+                                                <input type="checkbox"
+                                                       id="gift" value="true"
+                                                       v-bind:true-value="order.sendGift"
+                                                       v-bind:false-value="order.dontSendGift"
+                                                       v-model="order.gift">
+                                                <label for="checkbox">Ship As Gift?</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6 boxes">
+                                                <!-- Add radio button and bind to order -->
+                                                <input type="radio"
+                                                       id="home"
+                                                       v-bind:value="order.home"
+                                                       v-model="order.method">
+                                                <label for="home">Home</label>
+                                                <!-- Add radio button and bind to order -->
+                                                <input type="radio"
+                                                       id="business"
+                                                       v-bind:value="order.business"
+                                                       v-model="order.method">
+                                                <label for="business">Business</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <!-- place order button on click call submitForm method-->
+                                                <button type="submit" class="btn btn-primary submit" v-on:click="submitForm">Place Order</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Display everything in the gray area below the place order button-->
+                                        <div class="col-md-12 verify">
+                                              <pre>
+                                                First Name: {{order.firstName}}
+                                                Last Name: {{order.lastName}}
+                                                Address: {{order.address}}
+                                                City: {{order.city}}
+                                                Zip: {{order.zip}}
+                                                State: {{order.state}}
+                                                Method: {{order.method}}
+                                                Gift: {{order.gift}}
+                                              </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script type="text/javascript">
+            let APP_LOG_LIFECYCLE_EVENTS = true;
+
+            // Webstore vue instance
+            let webstore = new Vue({
+                // Specify what HTML element to target
+                el: '#app',
+                // Set data
+                data: {
+                    sitename: "Vue.js Pet Depot",
+                    // showProduct set to true so the product page displays first
+                    // when showProduct is set to false the checkout screen displays
+                    showProduct: true,
+                    a: false,
+                    states: {
+                        AL: 'Alabama',
+                        AK: 'Alaska',
+                        AR: 'Arizona',
+                        CA: 'California',
+                        NV: 'Nevada'
+                    },
+                    order: {
+                        firstName: '',
+                        lastName: '',
+                        address: '',
+                        city: '',
+                        zip: '',
+                        state: '',
+                        method: 'Home Address',             // Set default value to home address
+                        business: 'Business Address',
+                        home: 'Home Address',
+                        gift:'Send As A Gift',
+                        sendGift: 'Send As A Gift',
+                        dontSendGift: 'Do Not Send As A Gift'
+                    },
+                    product: {
+                        id: 1001,
+                        title: "Cat Food, 25lb bag",
+                        description: "A 25 pound bag of <em>irresistible</em>," + " organic goodness for your cat.",
+                        price: 2000,
+                        image: "product-fullsize.png",
+                        availableInventory: 5
+                    },
+                    // Array for holding cart items
+                    cart: []
+                },
+                // add methods to the Vue instance
+                methods: {
+                    // Adds an item to the cart array located in the data section of the Vue instance
+                    addToCart: function() {
+                        this.cart.push( this.product.id );
+                    },
+                    // ternary operation, if this.showPrduct is true then it will return the first value "false"
+                    showCheckout() {
+                        this.showProduct = this.showProduct ? false: true;
+                    },
+                    // Pop alert that the form has been submitted when place order is clicked
+                    submitForm() {
+                        alert('Submitted');
+                    }
+                },
+                // calculations added to Vue instance
+                computed: {
+                    // Counts the length of the cart array
+                    cartItemCount() {
+                        return this.cart.length || '';
+                    },
+                    canAddToCart() {
+                        return this.product.availableInventory > this.cartItemCount;
+                    }
+                },
+                // Use filters to format 2000 as $20.00
+                filters: {
+                    formatPrice(price) {
+                        // If it is not an integer return nothing
+                        if (!parseInt(price)) { return ""; }
+                        // If $1,000 or more add a comma every 3 spaces
+                        if (price > 99999) {
+                            let priceString = (price / 100).toFixed(2);
+                            let priceArray = priceString.split("").reverse();
+                            let index = 3;
+                            while (priceArray.length > index + 3) {
+                                priceArray.splice(index + 3, 0, ",");
+                                index += 4;
+                            }
+                            return "$" + priceArray.reverse().join("");
+                            // Less than $1,000 return a formatted number no comma
+                        } else {
+                            return "$" + (price / 100).toFixed(2);
+                        }
+                    }
+                },
+                //Create log instances to track the cycle of the app
+                beforeCreate: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("beforeCreate");
+                    }
+                },
+                created: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("created");
+                    }
+                },
+                beforeMount: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("beforeMount");
+                    }
+                },
+                mounted: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("mounted");
+                    }
+                },
+                beforeUpdate: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("beforeUpdate");
+                    }
+                },
+                updated: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){
+                        console.log("updated");
+                    }
+                },
+                beforeDestroy: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){}
+                    console.log("beforeDestroy");
+                },
+                destroyed: function () {
+                    if (APP_LOG_LIFECYCLE_EVENTS){}
+                    console.log("destroyed");
+                }
+            });
+        </script>
+    </body>
+</html>

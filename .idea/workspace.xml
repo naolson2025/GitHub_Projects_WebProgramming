@@ -2,13 +2,394 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/canvasjs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/canvasjs.react.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/animated-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-from-json-data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-axis-scale-breaks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-crosshair.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-custom-legend-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-image-overlay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-index-data-label.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-inverted-reversed-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-logarithmic-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-secondary-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-zoom-pan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/dynamic-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/interactive-draggable-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/multi-series-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/null-data-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/performance-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/dashed-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/dynamic-spline-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-axis-scale-breaks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-data-markers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-logarithmic-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-multiple-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-zoom-pan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/multi-series-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/multi-series-spline-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/multi-series-step-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/spline-chart-with-legends.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/spline-chart-with-secondary-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/spline-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/step-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/multi-series-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/multi-series-range-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/multi-series-spline-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/range-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/range-spline-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/spline-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/stacked-area-100-chart-with-date-time-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/stacked-area-100-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/stacked-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/step-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/bar-chart-with-axis-scale-break.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/bar-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/column-chart-with-multiple-axis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/column-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/multi-series-bar-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/multi-series-range-column-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/multi-series-waterfall-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/range-bar-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/range-column-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-bar-100-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-bar-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-column-100-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-column-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/waterfall-chart-with-custom-color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/waterfall-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-Chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-chart-with-custom-inner-radius.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart-with-custom-neck.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/inverted-reversed-funnel-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-custom-radius.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-legends.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-where-area-represents-value.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-with-index-label-placed-Inside.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/candlestick-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/multi-series-candlestick-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/ohlc-chart-from-json-data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/ohlc-stock-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/bubble-chart-with-data-marker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/bubble-chart-with-zoom-pan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/bubble-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/multi-series-scatter-point-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/scatter-point-chart-with-custom-marker.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/scatter-point-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/08-box-and-whisker-charts/box-and-whisker-chart-with-custom-color.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/08-box-and-whisker-charts/box-and-whisker-chart-with-outliers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/08-box-and-whisker-charts/box-and-whisker-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/column-line-area-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/error-bar-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/error-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/error-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/ohlc-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/pareto-chart-with-index-data-label.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/pareto-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/range-area-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/10-dynamic-charts/dynamic-column-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/10-dynamic-charts/dynamic-line-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/10-dynamic-charts/dynamic-multi-series-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-line-chart-with-zoom-pan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-resizable-chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-spline-area-chart-in-tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-spline-chart-with-image-export.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/instruction.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jquery.canvasjs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab_7/product-fullsize.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/adler32" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/adler32.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cfb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cfb.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/codepage" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/codepage.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/crc32" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/crc32.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/printj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/printj.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/ssf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/ssf.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/xlsx.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/adler32.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/bin/adler32.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/types/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/bin/cfb.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/cfb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/cfb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/cfb.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/cfb.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/xlscfb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/cfb/xlscfb.flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bin/codepage.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10000.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10001.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10002.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10003.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10004.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10005.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10006.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10007.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10008.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10010.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10017.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10021.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10029.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10079.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10081.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10082.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1010.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1026.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1047.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1132.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1140.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1141.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1142.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1143.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1144.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1145.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1146.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1147.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1148.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1149.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1250.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1251.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1252.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1253.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1254.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1255.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1256.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1257.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1258.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1361.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20000.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20001.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20002.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20003.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20004.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20005.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20105.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20106.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20107.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20108.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20261.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20269.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20273.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20277.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20278.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20280.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20284.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20285.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20290.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20297.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20420.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20423.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20424.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20833.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20838.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20866.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20871.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20880.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20905.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20924.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20932.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20936.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20949.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/21025.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/21027.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/21866.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28591.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28592.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28593.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28594.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28595.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28596.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28597.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28598.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28599.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28600.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28601.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28603.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28604.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28605.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28606.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/29001.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/37.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/38598.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/437.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/47451.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/500.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50220.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50221.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50222.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50225.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50227.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/51932.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/51936.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/51949.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/52936.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/54936.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57002.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57003.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57004.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57005.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57006.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57007.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57008.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57009.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57010.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57011.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/620.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/708.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/720.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/737.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/775.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/808.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/850.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/852.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/855.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/857.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/858.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/860.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/861.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/862.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/863.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/864.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/865.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/866.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/869.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/870.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/872.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/874.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/875.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/895.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/932.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/936.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/949.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/950.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/cptable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/cputils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/cpexcel.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/cputils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/sbcs.full.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/typings/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/codepage/types/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/commander/typings/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/bin/crc32.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/crc32.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/types/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/exit-on-epipe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/frac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/frac.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/frac.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/frac.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/frac/types/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/bin/printj.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/printj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/printj.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/printj.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/printj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/printj/types/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/bin/ssf.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/shim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/ssf.flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/ssf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/ssf/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/xls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/bin/xlsx.njs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/cpexcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/shim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.core.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.core.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.extendscript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.full.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.full.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/formats.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/formats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/legend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/xlsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/xlsxworker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Project_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/Project_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/Project_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/excel_parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project_1/excel_parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/test_charts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_1/test_excel_parse.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,39 +407,21 @@
     <favorites_list name="Web_Programming" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
+        <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="153">
+              <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project_1/charts.js">
+        <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project_1/excel_parse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2958">
-              <caret line="174" selection-start-line="174" selection-end-line="174" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="493">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -114,6 +477,8 @@
         <option value="$PROJECT_DIR$/Project_1/test_excel_parse.js" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.css" />
         <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
+        <option value="$PROJECT_DIR$/Lab_7/Vue_app_reading.css" />
+        <option value="$PROJECT_DIR$/Lab_7/Vue_app_reading.html" />
       </list>
     </option>
   </component>
@@ -134,7 +499,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,28 +509,31 @@
             <path>
               <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
-              <item name="Lab_5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
-              <item name="Project_1" type="462c0819:PsiDirectoryNode" />
+              <item name="Lab_7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.1" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -243,7 +610,9 @@
       <workItem from="1552600442778" duration="6848000" />
       <workItem from="1552686332139" duration="12025000" />
       <workItem from="1552750729256" duration="21621000" />
-      <workItem from="1552832996866" duration="4361000" />
+      <workItem from="1552832996866" duration="4598000" />
+      <workItem from="1553445857439" duration="685000" />
+      <workItem from="1553633867401" duration="5754000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -525,11 +894,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552776590565</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="project complete">
+      <created>1552837654368</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1552837654369</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116872000" />
+    <option name="totallyTimeSpent" value="123548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,9 +918,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14963119" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11959958" />
+      <window_info id="Structure" order="1" weight="0.24973656" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
@@ -606,7 +983,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finalized longest bridges map and markers" />
     <MESSAGE value="Completed extra credit adding bridge icons as markers" />
     <MESSAGE value="Added chart" />
     <MESSAGE value="moved files to master folder for live GitHub pages" />
@@ -631,7 +1007,8 @@
     <MESSAGE value="completed gathering income and expenses. Need to create graph objects" />
     <MESSAGE value="primary doughnut graphs complete, need drill down" />
     <MESSAGE value="expenses drill down works" />
-    <option name="LAST_COMMIT_MESSAGE" value="expenses drill down works" />
+    <MESSAGE value="project complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="project complete" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
@@ -758,30 +1135,7 @@
     <entry file="file://$PROJECT_DIR$/Project_1/test.js" />
     <entry file="file://$PROJECT_DIR$/Project_1/Test.html" />
     <entry file="file://$PROJECT_DIR$/Project_1/create_graphs.js" />
-    <entry file="file://$PROJECT_DIR$/Project_1/charts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/excel_parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="35" column="2" lean-forward="true" selection-end-line="59" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="110" column="55" selection-start-line="110" selection-start-column="55" selection-end-line="110" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_1/example.html" />
     <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -789,31 +1143,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
+    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="841">
+          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
+        <state relative-caret-position="841">
           <caret line="151" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/excel_parse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
+        <state relative-caret-position="841">
           <caret line="174" selection-start-line="174" selection-end-line="174" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
+    <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="408">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_7/Vue_apps_from_class.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
         </state>
       </provider>
     </entry>
