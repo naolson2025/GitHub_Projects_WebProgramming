@@ -21,5 +21,7 @@
     <orderEntry type="library" name="xlsx.full" level="application" />
     <orderEntry type="library" name="@types/jquery" level="application" />
     <orderEntry type="library" name="@types/exceljs" level="application" />
+    <orderEntry type="library" name="vue" level="application" />
+    <orderEntry type="library" name="axios" level="application" />
   </component>
 </module>

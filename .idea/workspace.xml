@@ -1,400 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/canvasjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/canvasjs.react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/animated-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-from-json-data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-axis-scale-breaks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-crosshair.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-custom-legend-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-image-overlay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-index-data-label.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-inverted-reversed-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-logarithmic-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-secondary-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/chart-with-zoom-pan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/dynamic-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/interactive-draggable-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/multi-series-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/null-data-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/01-overview/performance-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/dashed-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/dynamic-spline-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-axis-scale-breaks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-data-markers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-logarithmic-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-multiple-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart-with-zoom-pan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/multi-series-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/multi-series-spline-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/multi-series-step-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/spline-chart-with-legends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/spline-chart-with-secondary-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/spline-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/02-line-spline-step-line-charts/step-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/multi-series-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/multi-series-range-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/multi-series-spline-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/range-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/range-spline-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/spline-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/stacked-area-100-chart-with-date-time-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/stacked-area-100-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/stacked-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/03-stacked-spline-range-area-charts/step-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/bar-chart-with-axis-scale-break.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/bar-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/column-chart-with-multiple-axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/column-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/multi-series-bar-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/multi-series-range-column-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/multi-series-waterfall-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/range-bar-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/range-column-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-bar-100-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-bar-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-column-100-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/stacked-column-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/waterfall-chart-with-custom-color.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/04-column-stacked-range-waterfall-charts/waterfall-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-Chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-chart-with-custom-inner-radius.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart-with-custom-neck.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/inverted-reversed-funnel-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-custom-radius.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-legends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-where-area-represents-value.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-with-index-label-placed-Inside.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/candlestick-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/multi-series-candlestick-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/ohlc-chart-from-json-data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/06-candlestick-ohlc-charts/ohlc-stock-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/bubble-chart-with-data-marker.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/bubble-chart-with-zoom-pan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/bubble-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/multi-series-scatter-point-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/scatter-point-chart-with-custom-marker.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/07-scatter-bubble-charts/scatter-point-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/08-box-and-whisker-charts/box-and-whisker-chart-with-custom-color.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/08-box-and-whisker-charts/box-and-whisker-chart-with-outliers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/08-box-and-whisker-charts/box-and-whisker-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/column-line-area-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/error-bar-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/error-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/error-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/ohlc-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/pareto-chart-with-index-data-label.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/pareto-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/09-combination-charts/range-area-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/10-dynamic-charts/dynamic-column-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/10-dynamic-charts/dynamic-line-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/10-dynamic-charts/dynamic-multi-series-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-line-chart-with-zoom-pan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-resizable-chart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-spline-area-chart-in-tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/examples/11-integration/jquery-spline-chart-with-image-export.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/instruction.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jquery.canvasjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab_7/product-fullsize.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/adler32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/adler32.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cfb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/cfb.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/codepage" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/codepage.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/crc32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/crc32.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/printj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/printj.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/ssf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/ssf.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.bin/xlsx.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/adler32.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/bin/adler32.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/adler-32/types/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/bin/cfb.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/cfb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/cfb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/cfb.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/cfb.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/dist/xlscfb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/cfb/xlscfb.flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bin/codepage.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10001.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10002.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10003.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10004.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10005.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10006.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10007.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10008.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10010.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10017.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10021.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10029.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10079.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10081.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/10082.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1010.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1026.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1047.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1132.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1140.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1141.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1142.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1143.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1144.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1145.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1146.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1147.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1148.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1149.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1250.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1251.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1252.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1253.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1254.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1255.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1256.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1257.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1258.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/1361.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20000.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20001.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20002.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20003.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20004.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20005.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20105.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20106.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20107.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20108.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20261.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20269.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20273.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20277.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20278.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20280.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20284.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20285.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20290.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20297.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20420.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20423.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20424.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20833.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20838.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20866.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20871.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20880.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20905.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20924.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20932.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20936.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/20949.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/21025.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/21027.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/21866.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28591.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28592.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28593.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28594.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28595.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28596.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28597.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28598.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28599.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28600.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28601.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28603.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28604.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28605.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/28606.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/29001.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/37.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/38598.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/437.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/47451.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/500.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50220.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50221.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50222.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50225.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/50227.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/51932.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/51936.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/51949.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/52936.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/54936.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57002.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57003.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57004.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57005.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57006.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57007.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57008.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57009.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57010.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/57011.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/620.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/708.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/720.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/737.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/775.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/808.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/850.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/852.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/855.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/857.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/858.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/860.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/861.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/862.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/863.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/864.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/865.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/866.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/869.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/870.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/872.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/874.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/875.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/895.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/932.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/936.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/949.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/bits/950.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/cptable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/cputils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/cpexcel.full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/cputils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/dist/sbcs.full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/node_modules/commander/typings/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/codepage/types/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/commander/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/commander/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/commander/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/commander/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/commander/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/commander/typings/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/bin/crc32.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/crc32.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/crc-32/types/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/exit-on-epipe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/exit-on-epipe/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/frac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/frac.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/dist/frac.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/frac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/frac/types/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/bin/printj.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/printj.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/printj.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/dist/printj.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/printj.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/printj/types/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/bin/ssf.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/shim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/ssf.flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/ssf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/ssf/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsjs/xls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/bin/xlsx.njs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/cpexcel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/shim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.core.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.core.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.extendscript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.full.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/dist/xlsx.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/formats.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/formats.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/legend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/types/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/types/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/xlsx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/xlsx/xlsxworker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="231cce5c-a66d-4288-8d4f-6060edd5b772" name="Default Changelist" comment="Created ISS HTML, JS, and Styles">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading_CH5.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/canvasjs_min_js.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab_7/Vue_app_reading.css" afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab_7/Vue_app_reading.html" afterPath="$PROJECT_DIR$/Lab_7/Vue_app_reading.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -403,25 +25,48 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Web_Programming" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Vue_app_reading.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+            <state relative-caret-position="102">
+              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Vue_app_reading_CH5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading_CH5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="44" column="78" lean-forward="true" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vue_app_reading.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -431,8 +76,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -456,29 +101,13 @@
         <option value="$PROJECT_DIR$/Lab_5/Part_1.js" />
         <option value="$PROJECT_DIR$/Lab_5/ISS_location/ISS_Style.css" />
         <option value="$PROJECT_DIR$/Lab_5/Cat_Fact_API.html" />
-        <option value="$PROJECT_DIR$/Lab_5/Sunrise_Sunset.html" />
         <option value="$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html" />
+        <option value="$PROJECT_DIR$/Lab_5/Sunrise_Sunset.html" />
         <option value="$PROJECT_DIR$/Lab_5/ISS_location/fetch.js" />
-        <option value="$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html" />
-        <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.css" />
-        <option value="$PROJECT_DIR$/Lab_6/Vue_app_reading.html" />
-        <option value="$PROJECT_DIR$/Project_1/csv_reader.js" />
-        <option value="$PROJECT_DIR$/Project_1/csv_reader2.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Project_1/Project_1.js" />
-        <option value="$PROJECT_DIR$/Project_1/create_graphs.js" />
-        <option value="$PROJECT_DIR$/Project_1/Test.html" />
-        <option value="$PROJECT_DIR$/Project_1/Excel_parse.js" />
-        <option value="$PROJECT_DIR$/Project_1/test.js" />
-        <option value="$PROJECT_DIR$/Project_1/excel_parse.js" />
-        <option value="$PROJECT_DIR$/Project_1/charts.js" />
-        <option value="$PROJECT_DIR$/Project_1/example.html" />
-        <option value="$PROJECT_DIR$/Project_1/test_charts.js" />
-        <option value="$PROJECT_DIR$/Project_1/test_excel_parse.js" />
-        <option value="$PROJECT_DIR$/Project_1/Project_1.css" />
-        <option value="$PROJECT_DIR$/Project_1/Project_1.html" />
+        <option value="$PROJECT_DIR$/Lab_7/Vue_app_reading_CH5.html" />
         <option value="$PROJECT_DIR$/Lab_7/Vue_app_reading.css" />
         <option value="$PROJECT_DIR$/Lab_7/Vue_app_reading.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -487,32 +116,64 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2484" />
-    <option name="y" value="-11" />
-    <option name="width" value="431" />
-    <option name="height" value="445" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web_Programming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web_Programming" type="462c0819:PsiDirectoryNode" />
-              <item name="Lab_7" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Web_Programming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lab_7" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -520,25 +181,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.15.1" />
-    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="javascript.nodejs.core.library.configured.version" value="6.9.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -565,23 +218,74 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Part_1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lab_5/Part_1.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
+    <configuration default="false" name="Part_1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/Lab_5/Part_1.js" working-dir="$PROJECT_DIR$">
+      <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method v="2" />
+      <method />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.Part_1.js" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.Part_1.js" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -598,21 +302,8 @@
       <workItem from="1549812322362" duration="19262000" />
       <workItem from="1549929995658" duration="1695000" />
       <workItem from="1550513531785" duration="5150000" />
-      <workItem from="1550791026451" duration="9531000" />
-      <workItem from="1551030400265" duration="3381000" />
-      <workItem from="1551293570380" duration="304000" />
-      <workItem from="1551294396218" duration="24000" />
-      <workItem from="1551765108441" duration="3735000" />
-      <workItem from="1552248056028" duration="1987000" />
-      <workItem from="1552335233757" duration="7658000" />
-      <workItem from="1552422010164" duration="8109000" />
-      <workItem from="1552509227079" duration="8626000" />
-      <workItem from="1552600442778" duration="6848000" />
-      <workItem from="1552686332139" duration="12025000" />
-      <workItem from="1552750729256" duration="21621000" />
-      <workItem from="1552832996866" duration="4598000" />
-      <workItem from="1553445857439" duration="685000" />
-      <workItem from="1553633867401" duration="5754000" />
+      <workItem from="1550791026451" duration="9751000" />
+      <workItem from="1553804679449" duration="1229000" />
     </task>
     <task id="LOCAL-00001" summary="Set up HTML GitHub test">
       <created>1549742486117</created>
@@ -761,151 +452,11 @@
       <option name="project" value="LOCAL" />
       <updated>1550794949826</updated>
     </task>
-    <task id="LOCAL-00022" summary="Added sunrise sunset link to index.html">
-      <created>1551031426627</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1551031426627</updated>
-    </task>
-    <task id="LOCAL-00023" summary="attempted to update ISS location">
-      <created>1551033347158</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1551033347158</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added capital city game to index.html">
-      <created>1551293682004</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1551293682004</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Set up Lab 6 added vue apps from class">
-      <created>1552251595938</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1552251595938</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Finished part 1">
-      <created>1552259690431</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1552259690431</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Finished part 1">
-      <created>1552259984046</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1552259984046</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Working Vue app Ch 2 pg 24">
-      <created>1552338863272</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1552338863272</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Finished Vue Ch 2">
-      <created>1552344530894</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1552344530894</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Project 1 added Excel Parse and canvasjs">
-      <created>1552428475090</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1552428475090</updated>
-    </task>
-    <task id="LOCAL-00031" summary="working on structuring the two canvas charts side by side">
-      <created>1552430438716</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1552430438716</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Added Lab 1 - 3">
-      <created>1552510813754</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1552510813754</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Added Lab 1 - 3">
-      <created>1552510934334</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1552510934334</updated>
-    </task>
-    <task id="LOCAL-00034" summary="working project 1 reading Excel">
-      <created>1552518119040</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1552518119040</updated>
-    </task>
-    <task id="LOCAL-00035" summary="working project 1 reading Excel">
-      <created>1552607420235</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1552607420236</updated>
-    </task>
-    <task id="LOCAL-00036" summary="working on chart functions">
-      <created>1552694532654</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1552694532654</updated>
-    </task>
-    <task id="LOCAL-00037" summary="working on chart functions">
-      <created>1552698731033</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1552698731034</updated>
-    </task>
-    <task id="LOCAL-00038" summary="completed gathering income and expenses. Need to create graph objects">
-      <created>1552753097529</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1552753097529</updated>
-    </task>
-    <task id="LOCAL-00039" summary="primary doughnut graphs complete, need drill down">
-      <created>1552764239103</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1552764239103</updated>
-    </task>
-    <task id="LOCAL-00040" summary="expenses drill down works">
-      <created>1552776590565</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1552776590565</updated>
-    </task>
-    <task id="LOCAL-00041" summary="project complete">
-      <created>1552837654368</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1552837654369</updated>
-    </task>
-    <option name="localTasksCounter" value="42" />
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123548000" />
+    <option name="totallyTimeSpent" value="39642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -917,72 +468,45 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11959958" />
-      <window_info id="Structure" order="1" weight="0.24973656" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.14951245" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.21885157" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.2237601" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114583336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2237601" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="processedProjectFiles" value="true" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up HTML GitHub test" />
+    <MESSAGE value="Added test header and paragraph" />
+    <MESSAGE value="Git is working message" />
+    <MESSAGE value="Added to do list items" />
+    <MESSAGE value="Added to do list items &quot;complete other homework&quot;" />
+    <MESSAGE value="Added HTML file mouse_drag" />
+    <MESSAGE value="Updated mouse_drag so the color can be changed, the shape is now a circle, and the circle size can be changed." />
+    <MESSAGE value="Updated the formatting of the buttons" />
+    <MESSAGE value="Created a new HTML filed for the longest bridges map assignment" />
+    <MESSAGE value="Added longest bridges styles and scripts" />
+    <MESSAGE value="Finalized longest bridges map and markers" />
     <MESSAGE value="Completed extra credit adding bridge icons as markers" />
     <MESSAGE value="Added chart" />
     <MESSAGE value="moved files to master folder for live GitHub pages" />
@@ -992,31 +516,42 @@
     <MESSAGE value="Added link to longest bridges HTML" />
     <MESSAGE value="corrected spelling" />
     <MESSAGE value="Created ISS HTML, JS, and Styles" />
-    <MESSAGE value="Added sunrise sunset link to index.html" />
-    <MESSAGE value="attempted to update ISS location" />
-    <MESSAGE value="Added capital city game to index.html" />
-    <MESSAGE value="Set up Lab 6 added vue apps from class" />
-    <MESSAGE value="Finished part 1" />
-    <MESSAGE value="Working Vue app Ch 2 pg 24" />
-    <MESSAGE value="Finished Vue Ch 2" />
-    <MESSAGE value="Project 1 added Excel Parse and canvasjs" />
-    <MESSAGE value="working on structuring the two canvas charts side by side" />
-    <MESSAGE value="Added Lab 1 - 3" />
-    <MESSAGE value="working project 1 reading Excel" />
-    <MESSAGE value="working on chart functions" />
-    <MESSAGE value="completed gathering income and expenses. Need to create graph objects" />
-    <MESSAGE value="primary doughnut graphs complete, need drill down" />
-    <MESSAGE value="expenses drill down works" />
-    <MESSAGE value="project complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="project complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created ISS HTML, JS, and Styles" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/fetch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
     <entry file="file://$PROJECT_DIR$/Lab_4/GitHub_Test.html" />
     <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1024,21 +559,104 @@
     <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/bridge_chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_4/drawing_program.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3548">
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_Style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/Sunrise_Sunset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/fetch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GitHub_Test.html" />
+    <entry file="file://$PROJECT_DIR$/Lab_4/GitHub_Test.html" />
+    <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/Test.js" />
+    <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/bridge_chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_Style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1052,45 +670,43 @@
     <entry file="file://$PROJECT_DIR$/Lab_4/drawing_program.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-          <folding>
-            <element signature="e#9#15#0" expanded="true" />
-          </folding>
+          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_5/ISS_location/ISS_location.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="30" column="124" selection-start-line="30" selection-start-column="124" selection-end-line="30" selection-end-column="124" />
+          <caret line="30" column="124" lean-forward="false" selection-start-line="30" selection-start-column="124" selection-end-line="30" selection-end-column="124" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_6/Vue_app_reading.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
-          <caret line="74" column="71" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
+          <caret line="74" column="71" lean-forward="false" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_6/Vue_apps_from_class.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-929">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="72" />
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1099,37 +715,16 @@
     <entry file="file://$PROJECT_DIR$/Lab_4/longest_bridges_map/longest_bridges_map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="59" />
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Lab3/Lab 3 Advanced.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Lab3/Lab 3 Essentials.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Day2/Conference-registration.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITEC 2560 Web Programming/Hello World/Hello2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_2/Favorite-Program.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://H:/../ITEC 2560 Web Programming/Lab3/Lab 3 Essentials.html" />
     <entry file="file://$PROJECT_DIR$/Lab_3/Lab 3 Advanced.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/test.js" />
@@ -1139,52 +734,67 @@
     <entry file="file://$PROJECT_DIR$/Lab_5/Part_1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/Project_1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <caret line="59" column="14" lean-forward="false" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/charts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/excel_parse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
-          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_1/Project_1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab_7/Vue_apps_from_class.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="111" column="96" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab_7/Vue_app_reading_CH5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="78" lean-forward="true" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
