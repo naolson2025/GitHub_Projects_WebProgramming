@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://unpkg.com/vue@2.6.7/dist/vue.js"></script>
+        <title>Would you rather</title>
+    </head>
+
+    <body>
+        <div id="app">
+
+            <h1>Would you rather</h1>
+
+            <would-you-rather-question
+                v-bind:question="question"
+                v-bind:answer1="answer1"
+                v-bind:answer2="answer2"
+                v-on:answer-changed="answerChanged">
+            </would-you-rather-question>
+        </div>
+
+
+        <div>
+            {{ userSelectionMessage }}
+        </div>
+
+        <script>
+
+            const wouldYouRatherQuestionComponent = {
+                template: `
+                    <div>
+                        <h2>{{ question }}</h2>
+                        <input type="radio" v-model="choice" v-bind:value="answer1" v-on:change="$emit('answer-changed', choice)">
+                        <label>{{ answer1 }}</label>
+                        <input type="radio" v-model="choice" v-bind:value="answer2" v-on:change="$emit('answer-changed', choice)">
+                        <label>{{ answer2 }}</label>
+                    </div>
+                `,
+                data(){
+                    return{
+                        choice: ''
+                    }
+                },
+                props: {
+                    question: String,
+                    answer1: String,
+                    answer2: String
+                }
+            };
+
+            let app = new Vue({
+                el: '#app',
+                // set data to a function
+                data() {
+                    return{
+                        // set variables inside of data function
+                        question: '.... be a wizard or have superpowers?',
+                        answer1: 'Wizard',
+                        answer2: 'Superhero',
+                        userSelectionMessage: ''
+                    }
+
+                },
+                methods: {
+                    answerChanged(answer){
+                        this.userSelectionMessage = `Thanks! You selected ${answer}`
+                    }
+                },
+                components: {
+                    'would-you-rather-question': wouldYouRatherQuestionComponent
+                }
+            })
+
+
+
+        </script>
+
+    </body>
+
+</html>
