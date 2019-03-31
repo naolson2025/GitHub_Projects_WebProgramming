@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+
     <head>
         <meta charset="UTF-8">
         <title>Vue.js Pet Depot</title>
@@ -12,181 +13,185 @@
         <!-- Bootstrap Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
               integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
     </head>
 
     <!--Website body-->
     <body>
-    <!--Establish the div for the Vue instance-->
-        <div id="app">
-            <header>
-                <!--call the site name from the webstore Vue instance-->
-                <!--Use CSS to center the h1, add padding, and color-->
-                <div class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <h1>{{ sitename }}</h1>
-                    </div>
-
-                    <div class="nav navbar-nav navbar-right cart">
-                        <!--   Activates the showCheckout method on click of button   -->
-                        <button type="button" class="btn btn-default btn-lg" v-on:click="showCheckout">
-                            <span class="glyphicon glyphicon-shopping-cart">{{ cartItemCount}}</span> Checkout
-                        </button>
-                    </div>
-                </div>
-
-            </header>
-
-            <!--Create main segment-->
-            <main>
-                <div class="row">
-                    <!--Add if-else functionality, if showProduct is true then proceed-->
-                    <div v-if="showProduct">
-                    <!--Add bootstrap columns to adjust website for browser size change-->
-                        <div class="col-md-2 col-md-offset-1">
-                            <figure>
-                                <!--Call image from Vue instance product-->
-                                <img v-bind:src="product.image">
-                            </figure>
+        <div class="container">
+        <!--Establish the div for the Vue instance-->
+            <div id="app">
+                <header>
+                    <!--call the site name from the webstore Vue instance-->
+                    <!--Use CSS to center the h1, add padding, and color-->
+                    <div class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <h1>{{ sitename }}</h1>
                         </div>
+
+                        <div class="nav navbar-nav navbar-right cart">
+                            <!--   Activates the showCheckout method on click of button   -->
+                            <button type="button" class="btn btn-default btn-lg" v-on:click="showCheckout">
+                                <span class="glyphicon glyphicon-shopping-cart">{{ cartItemCount}}</span> Checkout
+                            </button>
+                        </div>
+                    </div>
+
+                </header>
+
+                <!--Create main segment-->
+                <main>
+                    <div class="row">
+                        <!--Add if-else functionality, if showProduct is true then proceed-->
+                        <div v-if="showProduct">
                         <!--Add bootstrap columns to adjust website for browser size change-->
-                        <div class="col-md-6 col-md-offset-2 description">
-                            <!--Call title from vue instance-->
-                            <h1 v-text="product.title"></h1>
-                            <!--Call description from vue instance-->
-                            <p v-html="product.description"></p>
-                            <!--call price from vue instance, and call the formatPrice function to make is $ format-->
-                            <p class="price">
-                                {{product.price | formatPrice}}
-                            </p>
+                            <div class="col-md-2 col-md-offset-1">
+                                <figure>
+                                    <!--Call image from Vue instance product-->
+                                    <img v-bind:src="product.image">
+                                </figure>
+                            </div>
+                            <!--Add bootstrap columns to adjust website for browser size change-->
+                            <div class="col-md-6 col-md-offset-2 description">
+                                <!--Call title from vue instance-->
+                                <h1 v-text="product.title"></h1>
+                                <!--Call description from vue instance-->
+                                <p v-html="product.description"></p>
+                                <!--call price from vue instance, and call the formatPrice function to make is $ format-->
+                                <p class="price">
+                                    {{product.price | formatPrice}}
+                                </p>
 
-                            <!-- Add button that adds an item to the cart on click-->
-                            <button class=" btn btn-primary btn-lg"
-                                    v-on:click="addToCart"
-                                    v-if="canAddToCart">Add to cart</button>
-                            <button disabled="true" class=" btn btn-primary btn-lg" v-else >Add to cart</button>
+                                <!-- Add button that adds an item to the cart on click-->
+                                <button class=" btn btn-primary btn-lg"
+                                        v-on:click="addToCart"
+                                        v-if="canAddToCart">Add to cart</button>
+                                <button disabled="true" class=" btn btn-primary btn-lg" v-else >Add to cart</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div v-else>
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="panel panel-info">
-                                <div class="panel-heading">Pet Depot Checkout</div>
-                                <div class="panel-body">
-                                    <div class="form-group">
-
-                                        <div class="col-md-12">
-                                            <h4><strong>Enter Your Information</strong></h4>
-                                        </div>
-
+                        <div v-else>
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">Pet Depot Checkout</div>
+                                    <div class="panel-body">
                                         <div class="form-group">
-                                            <div class="col-md-6">
-                                                <strong>First Name:</strong>
-                                                <!-- Bind firstName to order -->
-                                                <input v-model.trim="order.firstName" class="form-control" />
-                                            </div>
 
-                                            <div class="col-md-6">
-                                                <strong>Last Name:</strong>
-                                                <!-- Bind lastName to order -->
-                                                <input v-model.trim="order.lastName" class="form-control" />
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-md-12"><strong>Address:</strong></div>
                                             <div class="col-md-12">
-                                                <!-- Trim used to get rid of white space entered by user-->
-                                                <input v-model.trim="order.address" class="form-control" />
+                                                <h4><strong>Enter Your Information</strong></h4>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-12"><strong>City:</strong></div>
-                                            <div class="col-md-12">
-                                                <input v-model.trim="order.city" class="form-control" />
+                                            <div class="form-group">
+                                                <div class="col-md-6">
+                                                    <strong>First Name:</strong>
+                                                    <!-- Bind firstName to order -->
+                                                    <input v-model.trim="order.firstName" class="form-control" />
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <strong>Last Name:</strong>
+                                                    <!-- Bind lastName to order -->
+                                                    <input v-model.trim="order.lastName" class="form-control" />
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-2">
-                                                <strong>State:</strong>
-                                                <!-- loop through the states and bind each value-->
-                                                <select v-model="order.state" class="form-control">
-                                                    <option disabled value="">State</option>
-                                                    <!-- key property is displayed for chosen option-->
-                                                    <option v-for="(state, key) in states" v-bind:value="state">
-                                                        {{key}}
-                                                    </option>
-                                                </select>
+                                            <div class="form-group">
+                                                <div class="col-md-12"><strong>Address:</strong></div>
+                                                <div class="col-md-12">
+                                                    <!-- Trim used to get rid of white space entered by user-->
+                                                    <input v-model.trim="order.address" class="form-control" />
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-6 col-md-offset-4">
-                                                <strong>Zip / Postal Code:</strong>
-                                                <input v-model.number="order.zip"
-                                                       class="form-control"
-                                                       type="number"/>
+                                            <div class="form-group">
+                                                <div class="col-md-12"><strong>City:</strong></div>
+                                                <div class="col-md-12">
+                                                    <input v-model.trim="order.city" class="form-control" />
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-6 boxes">
-                                                <!-- if the check box is check order will be bound to sendGift-->
-                                                <!-- if not checked it will be bound to dontSendGift-->
-                                                <input type="checkbox"
-                                                       id="gift" value="true"
-                                                       v-bind:true-value="order.sendGift"
-                                                       v-bind:false-value="order.dontSendGift"
-                                                       v-model="order.gift">
-                                                <label for="checkbox">Ship As Gift?</label>
+                                            <div class="form-group">
+                                                <div class="col-md-2">
+                                                    <strong>State:</strong>
+                                                    <!-- loop through the states and bind each value-->
+                                                    <select v-model="order.state" class="form-control">
+                                                        <option disabled value="">State</option>
+                                                        <!-- key property is displayed for chosen option-->
+                                                        <option v-for="(state, key) in states" v-bind:value="state">
+                                                            {{key}}
+                                                        </option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-6 boxes">
-                                                <!-- Add radio button and bind to order -->
-                                                <input type="radio"
-                                                       id="home"
-                                                       v-bind:value="order.home"
-                                                       v-model="order.method">
-                                                <label for="home">Home</label>
-                                                <!-- Add radio button and bind to order -->
-                                                <input type="radio"
-                                                       id="business"
-                                                       v-bind:value="order.business"
-                                                       v-model="order.method">
-                                                <label for="business">Business</label>
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-4">
+                                                    <strong>Zip / Postal Code:</strong>
+                                                    <input v-model.number="order.zip"
+                                                           class="form-control"
+                                                           type="number"/>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-md-6">
-                                                <!-- place order button on click call submitForm method-->
-                                                <button type="submit" class="btn btn-primary submit" v-on:click="submitForm">Place Order</button>
+                                            <div class="form-group">
+                                                <div class="col-md-6 boxes">
+                                                    <!-- if the check box is check order will be bound to sendGift-->
+                                                    <!-- if not checked it will be bound to dontSendGift-->
+                                                    <input type="checkbox"
+                                                           id="gift" value="true"
+                                                           v-bind:true-value="order.sendGift"
+                                                           v-bind:false-value="order.dontSendGift"
+                                                           v-model="order.gift">
+                                                    <label for="checkbox">Ship As Gift?</label>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Display everything in the gray area below the place order button-->
-                                        <div class="col-md-12 verify">
-                                              <pre>
-                                                First Name: {{order.firstName}}
-                                                Last Name: {{order.lastName}}
-                                                Address: {{order.address}}
-                                                City: {{order.city}}
-                                                Zip: {{order.zip}}
-                                                State: {{order.state}}
-                                                Method: {{order.method}}
-                                                Gift: {{order.gift}}
-                                              </pre>
+                                            <div class="form-group">
+                                                <div class="col-md-6 boxes">
+                                                    <!-- Add radio button and bind to order -->
+                                                    <input type="radio"
+                                                           id="home"
+                                                           v-bind:value="order.home"
+                                                           v-model="order.method">
+                                                    <label for="home">Home</label>
+                                                    <!-- Add radio button and bind to order -->
+                                                    <input type="radio"
+                                                           id="business"
+                                                           v-bind:value="order.business"
+                                                           v-model="order.method">
+                                                    <label for="business">Business</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-6">
+                                                    <!-- place order button on click call submitForm method-->
+                                                    <button type="submit" class="btn btn-primary submit" v-on:click="submitForm">Place Order</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Display everything in the gray area below the place order button-->
+                                            <div class="col-md-12 verify">
+                                                  <pre>
+                                                    First Name: {{order.firstName}}
+                                                    Last Name: {{order.lastName}}
+                                                    Address: {{order.address}}
+                                                    City: {{order.city}}
+                                                    Zip: {{order.zip}}
+                                                    State: {{order.state}}
+                                                    Method: {{order.method}}
+                                                    Gift: {{order.gift}}
+                                                  </pre>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
 
         <script type="text/javascript">
