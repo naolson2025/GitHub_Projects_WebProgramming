@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
     <head>
-        <meta charset="UTF-8">
         <script src="https://unpkg.com/vue@2.6.7/dist/vue.js"></script>
         <title>Would you rather</title>
     </head>
 
     <body>
         <div id="app">
-
             <h1>Would you rather</h1>
 
             <would-you-rather-question
@@ -18,11 +16,10 @@
                 v-bind:answer2="answer2"
                 v-on:answer-changed="answerChanged">
             </would-you-rather-question>
-        </div>
 
-
-        <div>
-            {{ userSelectionMessage }}
+            <div>
+                {{ userSelectionMessage }}
+            </div>
         </div>
 
         <script>
@@ -50,7 +47,7 @@
             };
 
             let app = new Vue({
-                el: '#app',
+                el: "#app",
                 // set data to a function
                 data() {
                     return{

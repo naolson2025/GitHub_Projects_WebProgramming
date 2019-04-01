@@ -8,19 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="leaflet" level="application" />
-    <orderEntry type="library" name="leaflet" level="application" />
-    <orderEntry type="library" name="d3.v5" level="application" />
     <orderEntry type="library" name="vue" level="application" />
-    <orderEntry type="library" name="Chart" level="application" />
     <orderEntry type="library" name="canvasjs.min.js" level="project" />
-    <orderEntry type="library" name="jquery-1.11.1" level="application" />
-    <orderEntry type="library" name="canvasjs" level="application" />
-    <orderEntry type="library" name="xlsx" level="application" />
-    <orderEntry type="library" name="jszip" level="application" />
-    <orderEntry type="library" name="xlsx.full" level="application" />
-    <orderEntry type="library" name="@types/jquery" level="application" />
-    <orderEntry type="library" name="@types/exceljs" level="application" />
     <orderEntry type="library" name="vue" level="application" />
     <orderEntry type="library" name="axios" level="application" />
   </component>
