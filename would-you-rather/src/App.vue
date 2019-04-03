@@ -1,15 +1,19 @@
 <template>
   <div id="app">
+    <h2>Would you rather....</h2>
     <div v-for="question in questions">
-      <li>
         <WouldYouRatherQuestion
                 v-bind:question="question.question"
                 v-bind:answer1="question.answer1"
                 v-bind:answer2="question.answer2"
                 v-on:answer-changed="answerChanged"
         ></WouldYouRatherQuestion>
-      </li>
     </div>
+
+    <div>
+      {{ userSelectionMessage }}
+    </div>
+
   </div>
 </template>
 
