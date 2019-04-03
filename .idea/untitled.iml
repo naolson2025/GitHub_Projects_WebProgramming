@@ -12,5 +12,6 @@
     <orderEntry type="library" name="canvasjs.min.js" level="project" />
     <orderEntry type="library" name="vue" level="application" />
     <orderEntry type="library" name="axios" level="application" />
+    <orderEntry type="library" name="axios" level="application" />
   </component>
 </module>
