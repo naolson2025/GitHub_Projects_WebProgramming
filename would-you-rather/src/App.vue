@@ -11,11 +11,9 @@
         ></WouldYouRatherQuestion>
     </div>
 
-    <div v-for="value in userChoice">
-        <li>{{ value }}</li>
+    <div v-for="choice in userChoice">
+        <li>{{ choice.choice }}</li>
     </div>
-
-      <div>{{ userSelectionMessage }}</div>
 
   </div>
 </template>
@@ -56,13 +54,19 @@ export default {
   },
   methods: {
     answerChanged(answer, id){
-        this.userChoice.push({key: id, value: this.userSelectionMessage = `Thanks! You selected ${answer}`});
-      this.userSelectionMessage = `Thanks! You selected ${answer}`
-    },
-    answerList(){
+        let updated = false;
+        this.userChoice.forEach(function (obj) {
+            if (obj["id"] === id){
+                obj['choice'] = `Thanks! You selected ${answer}`;
+                updated = true;
+            }
+        });
 
-    }
-  },
+        if (!updated){
+            this.userChoice.push({id, choice: `Thanks! You selected ${answer}`});
+        }
+    },
+  }
 }
 </script>
 
