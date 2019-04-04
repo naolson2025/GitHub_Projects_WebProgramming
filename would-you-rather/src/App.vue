@@ -3,6 +3,7 @@
     <h2>Would you rather....</h2>
     <div v-for="question in questions">
         <WouldYouRatherQuestion
+                v-bind:id="question.id"
                 v-bind:question="question.question"
                 v-bind:answer1="question.answer1"
                 v-bind:answer2="question.answer2"
@@ -10,9 +11,11 @@
         ></WouldYouRatherQuestion>
     </div>
 
-    <div>
-      {{ userSelectionMessage }}
+    <div v-for="value in userChoice">
+        <li>{{ value }}</li>
     </div>
+
+      <div>{{ userSelectionMessage }}</div>
 
   </div>
 </template>
@@ -27,6 +30,8 @@ export default {
   },
   data(){
     return{
+        userChoice: [],
+        userSelectionMessage: '',
       questions: [
         {
           id: 0,
@@ -50,8 +55,12 @@ export default {
     }
   },
   methods: {
-    answerChanged(answer){
+    answerChanged(answer, id){
+        this.userChoice.push({key: id, value: this.userSelectionMessage = `Thanks! You selected ${answer}`});
       this.userSelectionMessage = `Thanks! You selected ${answer}`
+    },
+    answerList(){
+
     }
   },
 }
