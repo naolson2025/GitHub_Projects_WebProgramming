@@ -11,6 +11,8 @@
         ></WouldYouRatherQuestion>
     </div>
 
+    <p></p>
+
     <div v-for="choice in userChoice">
         <li>{{ choice.choice }}</li>
     </div>
@@ -53,6 +55,9 @@ export default {
     }
   },
   methods: {
+      // Every time an answer is change check to see if the id already exist
+      // if it exists update it with the new user answer
+      // if it does not exist push a new item to the userChoice list
     answerChanged(answer, id){
         let updated = false;
         this.userChoice.forEach(function (obj) {
@@ -78,5 +83,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #9fcdff;
 }
 </style>
